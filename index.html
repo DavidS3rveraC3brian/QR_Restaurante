@@ -2,17 +2,74 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Menú Multilingüe</title>
   <style>
-    body { font-family: sans-serif; text-align: center; padding: 50px; }
-    h1 { margin-bottom: 30px; }
-    .btn { margin: 15px; padding: 15px 30px; font-size: 18px; text-decoration: none; color: white; background-color: #3498db; border-radius: 5px; display: inline-block; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('fondo.jpg'); /* Cambia esto por tu imagen de fondo */
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: white;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      backdrop-filter: brightness(0.9);
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 40px 20px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+      font-size: 24px;
+      font-weight: 600;
+    }
+
+    .btn {
+      margin: 10px;
+      padding: 15px 25px;
+      font-size: 18px;
+      text-decoration: none;
+      color: white;
+      background-color: #3498db;
+      border-radius: 8px;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #2980b9;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 20px;
+      }
+
+      .btn {
+        width: 80%;
+        font-size: 16px;
+      }
+    }
   </style>
 </head>
 <body>
-  <h1>Selecciona tu idioma / Select your language / Wählen Sie Ihre Sprache</h1>
-  <a class="btn" href="menu-es.png" target="_blank">🇪🇸 Español</a>
-  <a class="btn" href="menu-en.png" target="_blank">🇬🇧 English</a>
-  <a class="btn" href="menu-de.jpg" target="_blank">🇩🇪 Deutsch</a>
+  <div class="overlay">
+    <h1>Selecciona tu idioma / Select your language / Wählen Sie Ihre Sprache</h1>
+    <a class="btn" href="menu-es.png" target="_blank">🇪🇸 Español</a>
+    <a class="btn" href="menu-en.png" target="_blank">🇬🇧 English</a>
+    <a class="btn" href="menu-de.jpg" target="_blank">🇩🇪 Deutsch</a>
+  </div>
 </body>
 </html>
