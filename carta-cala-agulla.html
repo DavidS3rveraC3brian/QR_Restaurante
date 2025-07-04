@@ -436,6 +436,143 @@
             text-align: right;
         }
 
+        /* Postres */
+        /* Estilos para Postres */
+        .desserts-section {
+            background-color: #fff5f5;
+            border-left: 5px solid #ffcdd2;
+        }
+
+        .dessert-category {
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 1px dashed #ffebee;
+        }
+
+        .category-title {
+            color: #d32f2f;
+            font-family: 'Playfair Display', serif;
+            margin: 20px 0 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .category-title i {
+            font-size: 1.2rem;
+        }
+
+        .dessert-note {
+            margin-top: 20px;
+            padding: 12px;
+            background-color: #ffebee;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #d32f2f;
+        }
+
+        /* Ajustes específicos para postres */
+        .desserts-section .menu-item {
+            padding: 10px 0;
+        }
+
+        .desserts-section .special-badge {
+            background-color: #d32f2f;
+            color: white;
+        }
+
+        /* Bebidas */
+        /* Estilos para Bebidas */
+        .drinks-section {
+            background-color: #f5f9ff;
+            border-left: 5px solid #5d9cec;
+        }
+
+        .drinks-category {
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 1px dashed #e0eafc;
+        }
+
+        .category-title {
+            color: #2a6fd6;
+            font-family: 'Playfair Display', serif;
+            margin: 20px 0 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .subcategory-title {
+            color: #4a89dc;
+            font-size: 1.1rem;
+            margin: 15px 0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .drinks-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .drinks-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .drink-item {
+            background: white;
+            padding: 12px 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s;
+        }
+
+        .drink-item:hover {
+            transform: translateY(-3px);
+        }
+
+        .drink-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .drink-name {
+            font-weight: 600;
+            color: #2a6fd6;
+        }
+
+        .drink-price {
+            font-weight: 700;
+            color: #2a6fd6;
+            min-width: 60px;
+            text-align: right;
+        }
+
+        .drink-prices {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 3px;
+        }
+
+        .drink-prices span {
+            font-weight: 600;
+            color: #2a6fd6;
+        }
+
+        /* Badge para bebidas premium */
+        .drinks-section .special-badge {
+            background-color: #2a6fd6;
+            color: white;
+        }
+
         /* Responsive */
         @media (max-width: 768px) {
             .header-content {
@@ -1503,6 +1640,349 @@
             </div>
         </section>
     </main>
+
+    <!-- Postres -->
+    <section id="postres" class="menu-section desserts-section">
+        <h2 class="section-title"><i class="fas fa-ice-cream"></i> Postres</h2>
+
+        <!-- Frutas -->
+        <div class="dessert-category">
+            <h3 class="category-title"><i class="fas fa-apple-alt"></i> Frutas</h3>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <h4 class="item-name">Fresas con Nata</h4>
+                </div>
+                <div class="item-price">8,00 €</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <h4 class="item-name">Helado con Fresas</h4>
+                </div>
+                <div class="item-price">9,00 €</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <h4 class="item-name">Helado con Fresas y Nata</h4>
+                </div>
+                <div class="item-price">10,00 €</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <h4 class="item-name">Banana Split</h4>
+                </div>
+                <div class="item-price">9,00 €</div>
+            </div>
+
+            <div class="special-item">
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h4 class="item-name">Bandeja de Fruta Variada</h4>
+                        <p class="item-description">Piña, melón, fresa, kiwi y uvas</p>
+                    </div>
+                    <div class="item-price">17,50 €</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Helados -->
+        <div class="dessert-category">
+            <h3 class="category-title"><i class="fas fa-snowflake"></i> Helados</h3>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <h4 class="item-name">Solero</h4>
+                    <p class="item-description">Una bola de helado de vainilla con zumo de naranja natural</p>
+                </div>
+                <div class="item-price">7,50 €</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <h4 class="item-name">Batidos</h4>
+                    <p class="item-description">De fresa, vainilla, chocolate</p>
+                </div>
+                <div class="item-price">8,00 €</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <h4 class="item-name">Eiskaffee</h4>
+                    <p class="item-description">1 bola de helado de vainilla, café frío y nata</p>
+                </div>
+                <div class="item-price">8,00 €</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <h4 class="item-name">Eiskakao</h4>
+                    <p class="item-description">1 bola de helado de vainilla, cacao y nata</p>
+                </div>
+                <div class="item-price">9,00 €</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <h4 class="item-name">Bola de Helado</h4>
+                    <p class="item-description">Fresa, Vainilla, Chocolate y otros sabores existentes</p>
+                </div>
+                <div class="item-price">3,50 €</div>
+            </div>
+
+            <div class="special-item">
+                <span class="special-badge">Especialidad</span>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h4 class="item-name">Helado Cala Agulla</h4>
+                        <p class="item-description">3 bolas de helado con fruta y nata</p>
+                    </div>
+                    <div class="item-price">12,00 €</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tartas -->
+        <div class="dessert-category">
+            <h3 class="category-title"><i class="fas fa-birthday-cake"></i> Tartas</h3>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <h4 class="item-name">Tarta de Manzana</h4>
+                </div>
+                <div class="item-price">4,50 €</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <h4 class="item-name">Tarta de Queso</h4>
+                </div>
+                <div class="item-price">4,50 €</div>
+            </div>
+
+            <div class="menu-item">
+                <div class="item-info">
+                    <h4 class="item-name">Tiramisú</h4>
+                </div>
+                <div class="item-price">4,50 €</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bebidas -->
+    <section id="bebidas" class="menu-section drinks-section">
+        <h2 class="section-title"><i class="fas fa-glass-cheers"></i> Bebidas</h2>
+
+        <!-- Refrescos -->
+        <div class="drinks-category">
+            <h3 class="category-title"><i class="fas fa-soda-glass"></i> Refrescos</h3>
+
+            <div class="drinks-grid">
+                <!-- Refrescos con dos tamaños/precios -->
+                <div class="drink-item">
+                    <div class="drink-info">
+                        <h4 class="drink-name">Coca Cola</h4>
+                        <div class="drink-prices">
+                            <span>3,50 €</span>
+                            <span>4,50 €</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="drink-item">
+                    <div class="drink-info">
+                        <h4 class="drink-name">Coca Cola Zero</h4>
+                        <div class="drink-prices">
+                            <span>3,50 €</span>
+                            <span>4,50 €</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Resto de refrescos con mismo formato -->
+                <div class="drink-item">
+                    <div class="drink-info">
+                        <h4 class="drink-name">Fanta Naranja</h4>
+                        <div class="drink-prices">
+                            <span>3,50 €</span>
+                            <span>4,50 €</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="drink-item">
+                    <div class="drink-info">
+                        <h4 class="drink-name">Agua ½L</h4>
+                        <div class="drink-price">3,00 €</div>
+                    </div>
+                </div>
+
+                <div class="drink-item">
+                    <div class="drink-info">
+                        <h4 class="drink-name">Red Bull</h4>
+                        <div class="drink-price">5,50 €</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cervezas -->
+        <div class="drinks-category">
+            <h3 class="category-title"><i class="fas fa-beer"></i> Cervezas</h3>
+
+            <div class="drinks-grid">
+                <div class="drink-item">
+                    <div class="drink-info">
+                        <h4 class="drink-name">Cerveza Pequeña</h4>
+                        <div class="drink-price">3,80 €</div>
+                    </div>
+                </div>
+
+                <div class="drink-item">
+                    <div class="drink-info">
+                        <h4 class="drink-name">Coronita</h4>
+                        <div class="drink-price">6,00 €</div>
+                    </div>
+                </div>
+
+                <div class="special-item">
+                    <span class="special-badge">Premium</span>
+                    <div class="drink-item">
+                        <div class="drink-info">
+                            <h4 class="drink-name">Erdinger (Weissbier)</h4>
+                            <div class="drink-price">7,50 €</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cafés -->
+        <div class="drinks-category">
+            <h3 class="category-title"><i class="fas fa-coffee"></i> Cafés</h3>
+
+            <div class="drinks-list">
+                <div class="drink-item">
+                    <div class="drink-info">
+                        <h4 class="drink-name">Expresso</h4>
+                        <div class="drink-price">3,00 €</div>
+                    </div>
+                </div>
+
+                <div class="drink-item">
+                    <div class="drink-info">
+                        <h4 class="drink-name">Café con Leche</h4>
+                        <div class="drink-price">3,50 €</div>
+                    </div>
+                </div>
+
+                <div class="special-item">
+                    <div class="drink-item">
+                        <div class="drink-info">
+                            <h4 class="drink-name">Frappelatte</h4>
+                            <div class="drink-price">5,50 €</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vinos -->
+        <div class="drinks-category">
+            <h3 class="category-title"><i class="fas fa-wine-glass"></i> Vinos</h3>
+
+            <div class="drinks-grid">
+                <div class="drink-item">
+                    <div class="drink-info">
+                        <h4 class="drink-name">Vino de la Casa (Blanco/Rosado/Tinto)</h4>
+                        <div class="drink-prices">
+                            <span>4,50 €</span>
+                            <span>16,50 €</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="drink-item">
+                    <div class="drink-info">
+                        <h4 class="drink-name">Sangría 1L</h4>
+                        <div class="drink-price">17,00 €</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cava -->
+        <div class="drinks-category">
+            <h3 class="category-title"><i class="fas fa-wine-bottle"></i> Cava</h3>
+
+            <div class="drinks-list">
+                <div class="drink-item">
+                    <div class="drink-info">
+                        <h4 class="drink-name">Freixenet</h4>
+                        <div class="drink-price">18,00 €</div>
+                    </div>
+                </div>
+
+                <div class="special-item">
+                    <span class="special-badge">Premium</span>
+                    <div class="drink-item">
+                        <div class="drink-info">
+                            <h4 class="drink-name">Moët & Chandon 0.75</h4>
+                            <div class="drink-price">80,00 €</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cocktails -->
+        <div class="drinks-category">
+            <h3 class="category-title"><i class="fas fa-cocktail"></i> Cocktails</h3>
+
+            <div class="drinks-grid">
+                <div class="drink-item">
+                    <div class="drink-info">
+                        <h4 class="drink-name">Mojito</h4>
+                        <div class="drink-price">9,60 €</div>
+                    </div>
+                </div>
+
+                <div class="drink-item">
+                    <div class="drink-info">
+                        <h4 class="drink-name">Piña Colada</h4>
+                        <div class="drink-price">9,60 €</div>
+                    </div>
+                </div>
+            </div>
+
+            <h4 class="subcategory-title"><i class="fas fa-leaf"></i> Cocktails sin alcohol</h4>
+
+            <div class="drinks-grid">
+                <div class="drink-item">
+                    <div class="drink-info">
+                        <h4 class="drink-name">Mojito sin alcohol</h4>
+                        <div class="drink-price">9,00 €</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Premium -->
+        <div class="drinks-category">
+            <h3 class="category-title"><i class="fas fa-crown"></i> Premium</h3>
+
+            <div class="drinks-list">
+                <div class="drink-item">
+                    <div class="drink-info">
+                        <h4 class="drink-name">Hendriks Gin</h4>
+                        <div class="drink-price">14,00 €</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer>
         <div class="container">
