@@ -1,62 +1,681 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Carta - Chiringuito Cala Agulla</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body { font-family: 'Arial', sans-serif; margin: 30px; background: #fdfdfd; color: #333; }
-    h1, h2 { color: #117799; }
-    table { width: 100%; border-collapse: collapse; margin-bottom: 40px; }
-    th, td { padding: 10px; border-bottom: 1px solid #ccc; vertical-align: top; }
-    th { background-color: #f0f8ff; text-align: left; }
-    .precio { text-align: right; white-space: nowrap; }
-    section { margin-bottom: 50px; }
-  </style>
+    <meta charset="utf-8">
+    <title>Chiringuito Cala Agulla | Menú Digital</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Menú digital innovador del Chiringuito Cala Agulla en Mallorca">
+    <meta name="keywords" content="chiringuito, cala agulla, menú, carta, comida, playa, mallorca">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary: #2a9d8f;
+            --secondary: #264653;
+            --accent: #e9c46a;
+            --light: #f8f9fa;
+            --dark: #212529;
+            --text: #333333;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--text);
+            background-color: #f5f5f5;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* Header */
+        header {
+            background: linear-gradient(135deg, var(--secondary), var(--primary));
+            color: white;
+            padding: 20px 0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            position: relative;
+            z-index: 10;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .logo {
+            width: 180px;
+            height: auto;
+            filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+        }
+        
+        .restaurant-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: white;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+            margin: 10px 0;
+        }
+        
+        .language-selector {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .language-selector img {
+            width: 30px;
+            height: 20px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        
+        .language-selector img:hover {
+            transform: scale(1.1);
+        }
+        
+        /* Navigation */
+        .menu-nav {
+            display: flex;
+            justify-content: center;
+            background-color: white;
+            padding: 15px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 5;
+        }
+        
+        .menu-nav a {
+            padding: 10px 20px;
+            text-decoration: none;
+            color: var(--secondary);
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            transition: all 0.3s;
+            border-radius: 30px;
+            margin: 0 5px;
+        }
+        
+        .menu-nav a:hover, .menu-nav a.active {
+            background-color: var(--primary);
+            color: white;
+        }
+        
+        /* Menu Sections */
+        .menu-section {
+            background-color: white;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .menu-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 5px;
+            height: 100%;
+            background: linear-gradient(to bottom, var(--primary), var(--accent));
+        }
+        
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            color: var(--secondary);
+            margin-bottom: 25px;
+            padding-bottom: 10px;
+            border-bottom: 2px dashed var(--accent);
+            display: flex;
+            align-items: center;
+        }
+        
+        .section-title i {
+            margin-right: 15px;
+            color: var(--primary);
+        }
+        
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+            transition: all 0.3s;
+        }
+        
+        .menu-item:hover {
+            transform: translateX(5px);
+        }
+        
+        .item-info {
+            flex: 1;
+        }
+        
+        .item-name {
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: var(--secondary);
+            margin-bottom: 5px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .item-name .veg-icon {
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            background-color: #4CAF50;
+            border-radius: 50%;
+            margin-left: 10px;
+            position: relative;
+        }
+        
+        .item-name .veg-icon::after {
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: white;
+            border-radius: 50%;
+            top: 4px;
+            left: 4px;
+        }
+        
+        .item-description {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 5px;
+            font-style: italic;
+        }
+        
+        .item-price {
+            font-weight: 700;
+            color: var(--primary);
+            font-size: 1.1rem;
+            min-width: 70px;
+            text-align: right;
+        }
+        
+        /* Special Items */
+        .special-item {
+            background-color: rgba(233, 196, 106, 0.1);
+            border-left: 3px solid var(--accent);
+            padding: 15px;
+            border-radius: 0 8px 8px 0;
+            margin: 20px 0;
+        }
+        
+        .special-badge {
+            background-color: var(--accent);
+            color: var(--secondary);
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--secondary);
+            color: white;
+            padding: 40px 0 20px;
+            margin-top: 50px;
+        }
+        
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        .footer-section {
+            flex: 1;
+            min-width: 250px;
+            margin-bottom: 20px;
+            padding: 0 20px;
+        }
+        
+        .footer-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: var(--accent);
+        }
+        
+        .contact-info {
+            margin-bottom: 15px;
+        }
+        
+        .contact-info i {
+            margin-right: 10px;
+            color: var(--accent);
+        }
+        
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-icons a {
+            color: white;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+        
+        .social-icons a:hover {
+            color: var(--accent);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            margin-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 0.9rem;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .language-selector {
+                margin-top: 15px;
+                justify-content: center;
+            }
+            
+            .menu-nav {
+                flex-wrap: wrap;
+            }
+            
+            .menu-nav a {
+                padding: 8px 15px;
+                font-size: 0.8rem;
+                margin: 5px;
+            }
+            
+            .menu-section {
+                padding: 20px 15px;
+            }
+            
+            .section-title {
+                font-size: 1.5rem;
+            }
+            
+            .footer-section {
+                flex: 100%;
+                text-align: center;
+            }
+            
+            .social-icons {
+                justify-content: center;
+            }
+        }
+        
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .menu-section {
+            animation: fadeIn 0.6s ease-out forwards;
+        }
+        
+        .menu-section:nth-child(2) { animation-delay: 0.1s; }
+        .menu-section:nth-child(3) { animation-delay: 0.2s; }
+        .menu-section:nth-child(4) { animation-delay: 0.3s; }
+        .menu-section:nth-child(5) { animation-delay: 0.4s; }
+        .menu-section:nth-child(6) { animation-delay: 0.5s; }
+        .menu-section:nth-child(7) { animation-delay: 0.6s; }
+        .menu-section:nth-child(8) { animation-delay: 0.7s; }
+        .menu-section:nth-child(9) { animation-delay: 0.8s; }
+        .menu-section:nth-child(10) { animation-delay: 0.9s; }
+    </style>
 </head>
 <body>
-
-  <header>
-    <h1>🌊 Carta del Chiringuito Cala Agulla</h1>
-    <p>Disfruta de nuestros platos frente al mar 🏖️</p>
-  </header>
-
-  <section>
-    <h2>🥪 Bocadillos Clásicos</h2>
-    <table>
-      <tr><th>Bocadillo</th><th>Descripción</th><th class="precio">Precio</th></tr>
-      <tr><td>Jamón York</td><td>Clásico bocadillo de jamón cocido suave</td><td class="precio">5,90 €</td></tr>
-      <tr><td>Jamón York y Queso</td><td>Con queso fundido para un toque cremoso</td><td class="precio">6,50 €</td></tr>
-      <!-- ... más filas ... -->
-    </table>
-  </section>
-
-  <section>
-    <h2>🍕 Pizzas</h2>
-    <table>
-      <tr><th>Pizza</th><th>Ingredientes</th><th class="precio">Precio</th></tr>
-      <tr><td>Margarita</td><td>Tomate, mozzarella y orégano</td><td class="precio">11,50 €</td></tr>
-      <tr><td>Capricciosa</td><td>Tomate, mozzarella, jamón york, champiñones, alcachofas y huevo</td><td class="precio">15,00 €</td></tr>
-      <!-- ... más filas ... -->
-    </table>
-  </section>
-
-  <section>
-    <h2>🥗 Ensaladas Especiales</h2>
-    <table>
-      <tr><th>Ensalada</th><th>Ingredientes</th><th class="precio">Precio</th></tr>
-      <tr><td>César</td><td>Pollo, parmesano, croutons, cebolla morada y salsa César</td><td class="precio">18,00 €</td></tr>
-      <tr><td>Tropical</td><td>Lechuga, aguacate, frutas frescas, gambas y salsa rosa</td><td class="precio">19,00 €</td></tr>
-    </table>
-  </section>
-
-  <!-- Puedes repetir este patrón para secciones como Tapas, Carnes, Hamburguesas, etc. -->
-
-  <footer>
-    <p><strong>📍 Chiringuito Cala Agulla</strong><br>
-    Playa Cala Agulla, Cala Ratjada – Illes Balears<br>
-    Horario: 11:00 a 18:00</p>
-  </footer>
-
+    <header>
+        <div class="container header-content">
+            <div class="header-text">
+                <h1 class="restaurant-name">Chiringuito Cala Agulla</h1>
+                <p>Gastronomía mediterránea frente al mar</p>
+            </div>
+            <div class="language-selector">
+                <img src="images/b_esp.png" alt="Español" title="Español">
+                <img src="images/b_eng.png" alt="English" title="English">
+                <img src="images/b_ale.png" alt="Deutsch" title="Deutsch">
+            </div>
+        </div>
+    </header>
+    
+    <nav class="menu-nav">
+        <a href="#" class="active">Comida</a>
+        <a href="#">Postres</a>
+        <a href="#">Bebidas</a>
+        <a href="#">Alergias</a>
+        <a href="#">Horario</a>
+    </nav>
+    
+    <main class="container">
+        <!-- Bocadillos -->
+        <section class="menu-section">
+            <h2 class="section-title"><i class="fas fa-bread-slice"></i> Bocadillos</h2>
+            
+            <div class="menu-item">
+                <div class="item-info">
+                    <h3 class="item-name">Jamón York</h3>
+                    <p class="item-description">Pan artesano con jamón york de primera calidad</p>
+                </div>
+                <div class="item-price">5,90 €</div>
+            </div>
+            
+            <div class="menu-item">
+                <div class="item-info">
+                    <h3 class="item-name">Jamón York y Queso</h3>
+                    <p class="item-description">Combinación clásica con nuestro queso semicurado</p>
+                </div>
+                <div class="item-price">6,50 €</div>
+            </div>
+            
+            <!-- Más bocadillos... -->
+            
+            <div class="special-item">
+                <span class="special-badge">Especialidad de la casa</span>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 class="item-name">Chiringuito</h3>
+                        <p class="item-description">Lomo, queso, bacon, lechuga y tomate en pan rústico</p>
+                    </div>
+                    <div class="item-price">7,50 €</div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Sandwiches -->
+        <section class="menu-section">
+            <h2 class="section-title"><i class="fas fa-layer-group"></i> Sandwiches</h2>
+            
+            <div class="menu-item">
+                <div class="item-info">
+                    <h3 class="item-name">Mixto</h3>
+                    <p class="item-description">Jamón york, queso y tomate en pan de molde tostado</p>
+                </div>
+                <div class="item-price">6,50 €</div>
+            </div>
+            
+            <div class="menu-item">
+                <div class="item-info">
+                    <h3 class="item-name">Hawaii</h3>
+                    <p class="item-description">Jamón york, queso, tomate y piña asada</p>
+                </div>
+                <div class="item-price">8,00 €</div>
+            </div>
+            
+            <div class="special-item">
+                <span class="special-badge">Recomendación</span>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 class="item-name">Club</h3>
+                        <p class="item-description">Tres pisos con jamón york, queso, tomate, lechuga, pollo, huevo, bacon y salsa rosa</p>
+                    </div>
+                    <div class="item-price">12,00 €</div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Tapas -->
+        <section class="menu-section">
+            <h2 class="section-title"><i class="fas fa-utensils"></i> Tapas</h2>
+            
+            <div class="menu-item">
+                <div class="item-info">
+                    <h3 class="item-name">Alioli con pan y aceitunas</h3>
+                    <p class="item-description">Nuestra cremosa salsa alioli con pan recién horneado</p>
+                </div>
+                <div class="item-price">6,60 €</div>
+            </div>
+            
+            <div class="special-item">
+                <span class="special-badge">Novedad</span>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 class="item-name">Surtido de tapas</h3>
+                        <p class="item-description">Pimientos del padrón, dátiles con bacon, boquerones y rabas de calamar</p>
+                    </div>
+                    <div class="item-price">16,50 €</div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Pasta -->
+        <section class="menu-section">
+            <h2 class="section-title"><i class="fas fa-pasta"></i> Pasta</h2>
+            
+            <div class="menu-item">
+                <div class="item-info">
+                    <h3 class="item-name">Espaguetti Napolitana</h3>
+                    <p class="item-description">Con nuestra salsa de tomate casera y albahaca fresca</p>
+                </div>
+                <div class="item-price">11,50 €</div>
+            </div>
+            
+            <div class="menu-item">
+                <div class="item-info">
+                    <h3 class="item-name">Tallarines con gambas</h3>
+                    <p class="item-description">Gambas frescas con ajo, perejil y un toque de limón</p>
+                </div>
+                <div class="item-price">18,50 €</div>
+            </div>
+        </section>
+        
+        <!-- Pizzas -->
+        <section class="menu-section">
+            <h2 class="section-title"><i class="fas fa-pizza-slice"></i> Pizzas</h2>
+            
+            <div class="menu-item">
+                <div class="item-info">
+                    <h3 class="item-name">Margarita</h3>
+                    <p class="item-description">Clásica con tomate, mozzarella y orégano</p>
+                </div>
+                <div class="item-price">11,50 €</div>
+            </div>
+            
+            <div class="special-item">
+                <span class="special-badge">Especialidad</span>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 class="item-name">Cala Agulla</h3>
+                        <p class="item-description">Tomate, mozzarella, pimiento, cebolla, jamón york y gambas</p>
+                    </div>
+                    <div class="item-price">17,50 €</div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Ensaladas -->
+        <section class="menu-section">
+            <h2 class="section-title"><i class="fas fa-leaf"></i> Ensaladas</h2>
+            
+            <div class="menu-item">
+                <div class="item-info">
+                    <h3 class="item-name">Atún</h3>
+                    <p class="item-description">Mezcla de lechugas, tomate, cebolla, pimiento, zanahoria, maíz, aceitunas y atún</p>
+                </div>
+                <div class="item-price">14,50 €</div>
+            </div>
+            
+            <div class="menu-item">
+                <div class="item-info">
+                    <h3 class="item-name">Tropical</h3>
+                    <p class="item-description">Mezcla de lechugas con aguacate, piña, naranja, manzana, tomate cherry, gambas y salsa rosa</p>
+                </div>
+                <div class="item-price">19,00 €</div>
+            </div>
+        </section>
+        
+        <!-- Carnes -->
+        <section class="menu-section">
+            <h2 class="section-title"><i class="fas fa-drumstick-bite"></i> Carnes</h2>
+            
+            <div class="menu-item">
+                <div class="item-info">
+                    <h3 class="item-name">Pinchitos de cerdo</h3>
+                    <p class="item-description">2 pinchos con patatas fritas y ensalada</p>
+                </div>
+                <div class="item-price">17,90 €</div>
+            </div>
+        </section>
+        
+        <!-- Pescados -->
+        <section class="menu-section">
+            <h2 class="section-title"><i class="fas fa-fish"></i> Pescados</h2>
+            
+            <div class="menu-item">
+                <div class="item-info">
+                    <h3 class="item-name">Gambas al ajillo</h3>
+                    <p class="item-description">Gambas frescas al ajillo con guindilla</p>
+                </div>
+                <div class="item-price">18,50 €</div>
+            </div>
+        </section>
+        
+        <!-- Hamburguesas -->
+        <section class="menu-section">
+            <h2 class="section-title"><i class="fas fa-hamburger"></i> Hamburguesas</h2>
+            
+            <div class="menu-item">
+                <div class="item-info">
+                    <h3 class="item-name">XXL Burger</h3>
+                    <p class="item-description">Carne de ternera con tomate, cebolla, lechuga, bacon, huevo, queso y patatas fritas</p>
+                </div>
+                <div class="item-price">13,50 €</div>
+            </div>
+            
+            <div class="special-item">
+                <span class="special-badge">Premium</span>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3 class="item-name">Big Burger Cala Agulla</h3>
+                        <p class="item-description">200gr de vacuno con tomate, cebolla, lechuga, bacon, queso, huevo y patatas fritas</p>
+                    </div>
+                    <div class="item-price">17,00 €</div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Niños -->
+        <section class="menu-section">
+            <h2 class="section-title"><i class="fas fa-child"></i> Menú Infantil</h2>
+            
+            <div class="menu-item">
+                <div class="item-info">
+                    <h3 class="item-name">Nuggets con patatas fritas</h3>
+                    <p class="item-description">Crujientes nuggets de pollo con patatas</p>
+                </div>
+                <div class="item-price">8,00 €</div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">Chiringuito Cala Agulla</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Playa Cala Agulla, Cala Ratjada</p>
+                        <p><i class="fas fa-phone"></i> +34 123 456 789</p>
+                        <p><i class="fas fa-envelope"></i> info@chiringuitocalaagulla.com</p>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Horario</h3>
+                    <p><i class="fas fa-clock"></i> Todos los días</p>
+                    <p>11:00 - 18:00</p>
+                    <p><i class="fas fa-sun"></i> Temporada de verano:</p>
+                    <p>10:00 - 20:00</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3 class="footer-title">Ubicación</h3>
+                    <div class="map-container">
+                        <!-- Aquí iría el iframe de Google Maps -->
+                        <img src="https://maps.googleapis.com/maps/api/staticmap?center=Cala+Agulla,Mallorca&zoom=15&size=300x200&markers=color:red%7CCala+Agulla,Mallorca&key=YOUR_API_KEY" alt="Mapa de ubicación" style="width:100%; border-radius:8px;">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>© 2023 Chiringuito Cala Agulla. Todos los derechos reservados.</p>
+                <p>Diseño innovador por <a href="#" style="color:var(--accent);">7bits</a></p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        // Efecto de scroll suave
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Animación al hacer scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, { threshold: 0.1 });
+        
+        document.querySelectorAll('.menu-section').forEach(section => {
+            section.style.opacity = 0;
+            section.style.transform = 'translateY(20px)';
+            section.style.transition = 'all 0.6s ease-out';
+            observer.observe(section);
+        });
+    </script>
 </body>
 </html>
