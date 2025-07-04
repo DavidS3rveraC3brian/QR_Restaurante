@@ -307,6 +307,135 @@
             font-size: 0.9rem;
         }
 
+        /* Estilos para la sección de salsas */
+        .sauces-section {
+            background-color: #fff9f5;
+            border-left: 5px solid #ffb74d;
+        }
+
+        .sauces-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .sauce-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s;
+        }
+
+        .sauce-item:hover {
+            transform: translateY(-3px);
+        }
+
+        .sauce-name {
+            font-weight: 600;
+            color: #e65100;
+            margin-bottom: 5px;
+        }
+
+        .sauce-description {
+            font-size: 0.85rem;
+            color: #666;
+            font-style: italic;
+        }
+
+        .sauce-price {
+            font-weight: 700;
+            color: #e65100;
+            min-width: 50px;
+            text-align: right;
+        }
+
+        .sauces-note {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #fff3e0;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            color: #e65100;
+            text-align: center;
+        }
+
+        .sauces-note i {
+            margin-right: 8px;
+        }
+
+        /* Estilos para Patatas y Acompañamientos */
+        .sides-section {
+            background-color: #f5f5f5;
+            border-left: 5px solid #8d6e63;
+        }
+
+        .sides-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .side-item {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+
+        .side-name {
+            color: #5d4037;
+            font-weight: 600;
+        }
+
+        .side-options {
+            margin-top: 15px;
+            padding: 10px;
+            background: #efebe9;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            color: #5d4037;
+        }
+
+        /* Estilos para Salchichas */
+        .hotdogs-section {
+            background-color: #fff3e0;
+            border-left: 5px solid #ff9800;
+        }
+
+        .hotdog-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 0;
+            border-bottom: 1px dashed #ffe0b2;
+        }
+
+        .hotdog-special .special-badge {
+            background-color: #ff9800;
+            color: white;
+        }
+
+        .combo-item {
+            background-color: #fff8e1;
+            padding: 12px;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+
+        .hotdog-name {
+            color: #e65100;
+            font-weight: 600;
+        }
+
+        .hotdog-price {
+            color: #e65100;
+            font-weight: 700;
+            min-width: 60px;
+            text-align: right;
+        }
+
         /* Responsive */
         @media (max-width: 768px) {
             .header-content {
@@ -1064,6 +1193,57 @@
             </div>
         </section>
 
+        <!-- Salsas -->
+        <section class="menu-section sauces-section">
+            <h2 class="section-title"><i class="fas fa-mortar-pestle"></i> Salsas</h2>
+
+            <div class="sauces-container">
+                <div class="sauce-item">
+                    <div class="sauce-info">
+                        <h3 class="sauce-name">Yogur</h3>
+                        <p class="sauce-description">Crema de yogur natural con especias</p>
+                    </div>
+                    <div class="sauce-price">3,00 €</div>
+                </div>
+
+                <div class="sauce-item">
+                    <div class="sauce-info">
+                        <h3 class="sauce-name">Rosa</h3>
+                        <p class="sauce-description">Mezcla de mayonesa y ketchup</p>
+                    </div>
+                    <div class="sauce-price">3,00 €</div>
+                </div>
+
+                <div class="sauce-item">
+                    <div class="sauce-info">
+                        <h3 class="sauce-name">Alioli</h3>
+                        <p class="sauce-description">Emulsión de ajo y aceite de oliva</p>
+                    </div>
+                    <div class="sauce-price">3,00 €</div>
+                </div>
+
+                <div class="sauce-item">
+                    <div class="sauce-info">
+                        <h3 class="sauce-name">Salsa César</h3>
+                        <p class="sauce-description">Clásica salsa con anchoas y parmesano</p>
+                    </div>
+                    <div class="sauce-price">3,00 €</div>
+                </div>
+
+                <div class="sauce-item">
+                    <div class="sauce-info">
+                        <h3 class="sauce-name">Mostaza Miel</h3>
+                        <p class="sauce-description">Equilibrio perfecto entre dulce y picante</p>
+                    </div>
+                    <div class="sauce-price">3,00 €</div>
+                </div>
+            </div>
+
+            <div class="sauces-note">
+                <p><i class="fas fa-info-circle"></i> Todas nuestras salsas son elaboradas artesanalmente</p>
+            </div>
+        </section>
+
         <!-- Carnes -->
         <section class="menu-section">
             <h2 class="section-title"><i class="fas fa-drumstick-bite"></i> Carnes</h2>
@@ -1105,17 +1285,6 @@
                 <div class="menu-item">
                     <div class="item-info">
                         <h3 class="item-name">Cordon Blue de Cerdo Casero</h3>
-                        <p class="item-description">Con patatas fritas y ensalada</p>
-                    </div>
-                    <div class="item-price">17,90 €</div>
-                </div>
-            </div>
-
-            <div class="special-item">
-                <span class="special-badge">Especialidad</span>
-                <div class="menu-item">
-                    <div class="item-info">
-                        <h3 class="item-name">Cordon Blue de Pollo Casero</h3>
                         <p class="item-description">Con patatas fritas y ensalada</p>
                     </div>
                     <div class="item-price">17,90 €</div>
@@ -1243,6 +1412,65 @@
             </div>
         </section>
 
+        <!-- Patatas -->
+        <section class="menu-section sides-section">
+            <h2 class="section-title"><i class="fas fa-potato"></i> Patatas</h2>
+
+            <div class="sides-grid">
+                <div class="side-item">
+                    <div class="side-info">
+                        <h3 class="side-name">Pequeñas</h3>
+                        <p class="side-description">Ración individual de patatas fritas crujientes</p>
+                    </div>
+                    <div class="side-price">5,50 €</div>
+                </div>
+
+                <div class="side-item">
+                    <div class="side-info">
+                        <h3 class="side-name">Grandes</h3>
+                        <p class="side-description">Ración para compartir de patatas fritas</p>
+                    </div>
+                    <div class="side-price">8,00 €</div>
+                </div>
+            </div>
+
+            <div class="side-options">
+                <p><i class="fas fa-check-circle"></i> Disponibles con: Alioli, Brava o Queso+Bacon (+1,50€)</p>
+            </div>
+        </section>
+
+        <!-- Salchichas -->
+        <section class="menu-section hotdogs-section">
+            <h2 class="section-title"><i class="fas fa-hotdog"></i> Salchichas</h2>
+
+            <div class="hotdog-item">
+                <div class="hotdog-info">
+                    <h3 class="hotdog-name">Hot Dog</h3>
+                    <p class="hotdog-description">Pan fresco con salchicha Frankfurt y toppings</p>
+                </div>
+                <div class="hotdog-price">6,00 €</div>
+            </div>
+
+            <div class="special-item hotdog-special">
+                <span class="special-badge">Recomendado</span>
+                <div class="hotdog-item">
+                    <div class="hotdog-info">
+                        <h3 class="hotdog-name">Hot Dog Especial</h3>
+                        <p class="hotdog-description">Con bacon crujiente, cebolla seca y queso fundido</p>
+                    </div>
+                    <div class="hotdog-price">7,00 €</div>
+                </div>
+            </div>
+
+            <div class="hotdog-item combo-item">
+                <div class="hotdog-info">
+                    <h3 class="hotdog-name">Hot Dog con Patatas Fritas</h3>
+                    <p class="hotdog-description">Incluye ración pequeña de patatas</p>
+                </div>
+                <div class="hotdog-price">9,00 €</div>
+            </div>
+        </section>
+
         <!-- Menú Infantil -->
         <section class="menu-section kids-section">
             <h2 class="section-title"><i class="fas fa-child"></i> Para Niños</h2>
@@ -1272,18 +1500,6 @@
                     <p class="item-description">Filete de pollo empanado con patatas</p>
                 </div>
                 <div class="item-price">9,50 €</div>
-            </div>
-
-            <div class="kid-options">
-                <div class="option-item">
-                    <i class="fas fa-glass-whiskey"></i> Incluye refresco pequeño o zumo
-                </div>
-                <div class="option-item">
-                    <i class="fas fa-ice-cream"></i> Postre infantil incluido
-                </div>
-                <div class="option-item">
-                    <i class="fas fa-gift"></i> Sorpresa infantil de regalo
-                </div>
             </div>
         </section>
     </main>
