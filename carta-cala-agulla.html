@@ -954,16 +954,16 @@
     </header>
 
     <nav class="menu-nav">
-        <a href="#" class="active">Comida</a>
-        <a href="#">Postres</a>
-        <a href="#">Bebidas</a>
+        <a href="#comida" class="active">Comida</a>
+        <a href="#postres">Postres</a>
+        <a href="#bebidas">Bebidas</a>
         <a href="#">Alergias</a>
         <a href="#">Horario</a>
     </nav>
 
     <main class="container">
         <!-- Bocadillos -->
-        <section class="menu-section">
+        <section id="comida" class="menu-section">
             <h2 class="section-title"><i class="fas fa-bread-slice"></i> Bocadillos</h2>
 
             <div class="menu-item">
@@ -2827,18 +2827,17 @@
         </footer>
 
         <script>
-            // Efecto de scroll suave
+            // 1. Efecto de scroll suave para los enlaces
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function (e) {
                     e.preventDefault();
-
                     document.querySelector(this.getAttribute('href')).scrollIntoView({
                         behavior: 'smooth'
                     });
                 });
             });
 
-            // Animación al hacer scroll
+            // 2. Animación de aparición de secciones al hacer scroll
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
@@ -2853,6 +2852,29 @@
                 section.style.transform = 'translateY(20px)';
                 section.style.transition = 'all 0.6s ease-out';
                 observer.observe(section);
+            });
+
+            // 3. Resaltar la sección activa en el menú al hacer scroll
+            window.addEventListener('scroll', function () {
+                const sections = document.querySelectorAll('.menu-section');
+                const navLinks = document.querySelectorAll('.menu-nav a');
+                let current = '';
+
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+
+                    if (pageYOffset >= (sectionTop - 200)) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === `#${current}`) {
+                        link.classList.add('active');
+                    }
+                });
             });
         </script>
 </body>
