@@ -482,6 +482,89 @@
             color: white;
         }
 
+        /* Estilos especiales para la sección de Cervezas */
+        .drinks-category.beer-category {
+            background-color: #fff8e1;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-left: 5px solid #ffb300;
+        }
+
+        .beer-category .category-title {
+            color: #ff8f00;
+            font-size: 1.8rem;
+            margin: 10px 0 20px;
+        }
+
+        .beer-category .category-title i {
+            color: #ffb300;
+            font-size: 1.5rem;
+        }
+
+        .beer-category .drinks-grid {
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .beer-category .drink-item {
+            background-color: #fff;
+            border: 1px solid #ffe0b2;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 3px 6px rgba(255, 179, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .beer-category .drink-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(255, 179, 0, 0.2);
+            border-color: #ffb300;
+        }
+
+        .beer-category .drink-name {
+            color: #e65100;
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        .beer-category .drink-price {
+            color: #f57c00;
+            font-weight: 800;
+            font-size: 1.1rem;
+        }
+
+        /* Estilos para cervezas premium */
+        .beer-category .drink-item:nth-last-child(-n+3) {
+            background-color: #fff3e0;
+            border: 1px solid #ffb300;
+        }
+
+        .beer-category .drink-item:nth-last-child(-n+3) .drink-name {
+            color: #bf360c;
+        }
+
+        .beer-category .drink-item:nth-last-child(-n+3) .drink-price {
+            color: #e65100;
+        }
+
+        /* Badge especial para cervezas */
+        .beer-category .special-badge {
+            background-color: #ff8f00;
+            color: white;
+        }
+
+        /* Nota sobre cervezas (si la añades) */
+        .beer-note {
+            margin-top: 20px;
+            padding: 12px;
+            background-color: #ffe0b2;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #e65100;
+        }
+
         /* Bebidas */
         /* Estilos para Bebidas */
         .drinks-section {
@@ -1088,7 +1171,8 @@
         <div class="container header-content">
             <div class="header-text">
                 <h1 class="restaurant-name">Chiringuito Cala Agulla</h1>
-                <p id="header-subtitle" data-translate="Gastronomía mediterránea frente al mar">Gastronomía mediterránea frente al mar</p>
+                <p id="header-subtitle" data-translate="Gastronomía mediterránea frente al mar">Gastronomía mediterránea
+                    frente al mar</p>
             </div>
             <div class="language-selector">
                 <img src="images/b_esp.png" alt="Español" title="Español" onclick="changeLanguage('es')">
@@ -1098,13 +1182,13 @@
         </div>
     </header>
 
-<nav class="menu-nav">
-    <a href="#comida" class="active" data-translate="Comida">Comida</a>
-    <a href="#postres" data-translate="Postres">Postres</a>
-    <a href="#bebidas" data-translate="Bebidas">Bebidas</a>
-    <a href="#" data-translate="Alergias">Alergias</a>
-    <a href="#" data-translate="Horario">Horario</a>
-</nav>
+    <nav class="menu-nav">
+        <a href="#comida" class="active" data-translate="Comida">Comida</a>
+        <a href="#postres" data-translate="Postres">Postres</a>
+        <a href="#bebidas" data-translate="Bebidas">Bebidas</a>
+        <a href="#" data-translate="Alergias">Alergias</a>
+        <a href="#" data-translate="Horario">Horario</a>
+    </nav>
 
     <main class="container">
         <!-- Bocadillos -->
@@ -2396,7 +2480,7 @@
         </div>
 
         <!-- Cervezas - Aunque técnicamente no son refrescos, las incluyo como solicitaste -->
-        <div class="drinks-category">
+        <div class="drinks-category beer-category">
             <h3 class="category-title"><i class="fas fa-beer"></i> Cervezas</h3>
 
             <div class="drinks-grid">
