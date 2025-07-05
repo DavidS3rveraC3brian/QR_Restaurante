@@ -843,6 +843,151 @@
             /* Sombra dorada */
         }
 
+        /* Cafés */
+        /* Estilos para la sección de cafés */
+        .coffee-section {
+            background-color: #f9f5f0;
+            border-left: 5px solid #6f4e37;
+            padding: 20px;
+            border-radius: 0 8px 8px 0;
+            margin-bottom: 30px;
+        }
+
+        .coffee-section .category-title {
+            color: #6f4e37;
+            font-family: 'Playfair Display', serif;
+            margin: 15px 0 25px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 1.8rem;
+        }
+
+        .coffee-section .category-title i {
+            color: #c4a484;
+            font-size: 1.5rem;
+        }
+
+        .coffee-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+            margin-bottom: 25px;
+        }
+
+        .coffee-item {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(111, 78, 55, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .coffee-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(111, 78, 55, 0.2);
+        }
+
+        .coffee-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 8px;
+        }
+
+        .coffee-name {
+            color: #6f4e37;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        .coffee-price {
+            color: #8d6e63;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        .coffee-description {
+            color: #5d4037;
+            font-size: 0.9rem;
+            margin: 0;
+            line-height: 1.4;
+        }
+
+        /* Estilos para cafés especiales */
+        .special-coffee {
+            border: 1px solid #d7ccc8;
+            background-color: #f5ebe6;
+        }
+
+        .special-coffee .coffee-name {
+            color: #5d4037;
+        }
+
+        .highlight-coffee {
+            position: relative;
+            background-color: #6f4e37;
+            border: none;
+        }
+
+        .highlight-coffee::before {
+            content: "★";
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            background: #c4a484;
+            color: white;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+        }
+
+        .highlight-coffee .coffee-name,
+        .highlight-coffee .coffee-price,
+        .highlight-coffee .coffee-description {
+            color: white;
+        }
+
+        /* Notas de cafés */
+        .coffee-notes {
+            background-color: #f0e6dd;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            border-left: 3px solid #c4a484;
+        }
+
+        .coffee-notes p {
+            color: #6f4e37;
+            font-size: 0.9rem;
+            margin: 8px 0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .coffee-notes i {
+            color: #8d6e63;
+            min-width: 20px;
+            text-align: center;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .coffee-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .coffee-section .category-title {
+                font-size: 1.5rem;
+            }
+        }
+
         /* Responsive */
         @media (max-width: 768px) {
             .header-content {
@@ -1985,36 +2130,36 @@
 
     <!-- Postres -->
     <section id="postres" class="menu-section desserts-section">
-        <h2 class="section-title"><i class="fas fa-ice-cream"></i> Postres</h2>
+        <h2 class="section-title"><i class="fas fa-ice-cream"></i> <span data-translate="Postres">Postres</span></h2>
 
         <!-- Frutas -->
         <div class="dessert-category">
-            <h3 class="category-title"><i class="fas fa-apple-alt"></i> Frutas</h3>
+            <h3 class="category-title"><i class="fas fa-apple-alt"></i> <span data-translate="Frutas">Frutas</span></h3>
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h4 class="item-name">Fresas con Nata</h4>
+                    <h4 class="item-name" data-translate="Fresas con Nata">Fresas con Nata</h4>
                 </div>
                 <div class="item-price">8,00 €</div>
             </div>
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h4 class="item-name">Helado con Fresas</h4>
+                    <h4 class="item-name" data-translate="Helado con Fresas">Helado con Fresas</h4>
                 </div>
                 <div class="item-price">9,00 €</div>
             </div>
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h4 class="item-name">Helado con Fresas y Nata</h4>
+                    <h4 class="item-name" data-translate="Helado con Fresas y Nata">Helado con Fresas y Nata</h4>
                 </div>
                 <div class="item-price">10,00 €</div>
             </div>
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h4 class="item-name">Banana Split</h4>
+                    <h4 class="item-name" data-translate="Banana Split">Banana Split</h4>
                 </div>
                 <div class="item-price">9,00 €</div>
             </div>
@@ -2022,14 +2167,16 @@
             <div class="special-item">
                 <div class="menu-item">
                     <div class="item-info">
-                        <h4 class="item-name">Bandeja de Fruta Variada</h4>
-                        <p class="item-description">Piña, melón, fresa, kiwi y uvas</p>
+                        <h4 class="item-name" data-translate="Bandeja de Fruta Variada">Bandeja de Fruta Variada</h4>
+                        <p class="item-description" data-translate="Piña, melón, fresa, kiwi y uvas">Piña, melón, fresa,
+                            kiwi y uvas</p>
                     </div>
                     <div class="item-price">17,50 €</div>
                 </div>
             </div>
         </div>
 
+        <!-- MEQUEDAO AQUI TRADUCIENDO -->
         <!-- Helados -->
         <div class="dessert-category">
             <h3 class="category-title"><i class="fas fa-snowflake"></i> Helados</h3>
@@ -2413,11 +2560,6 @@
                     </div>
                     <p class="coffee-description">Delicioso café frío batido con hielo</p>
                 </div>
-            </div>
-
-            <div class="coffee-notes">
-                <p><i class="fas fa-info-circle"></i> Todos nuestros cafés se preparan con granos 100% arábica</p>
-                <p><i class="fas fa-mug-hot"></i> Opción descafeinado disponible (+0,50€)</p>
             </div>
         </div>
 
@@ -2962,6 +3104,16 @@
                     "Alergias": "Alergias",
                     "Horario": "Horario",
 
+                    //Postres
+                    "Postres": "Postres",
+                    "Frutas": "Frutas",
+                    "Fresas con Nata": "Fresas con Nata",
+                    "Helado con Fresas": "Helado con Fresas",
+                    "Helado con Fresas y Nata": "Helado con Fresas y Nata",
+                    "Banana Split": "Banana Split",
+                    "Bandeja de Fruta Variada": "Bandeja de Fruta Variada",
+                    "Piña, melón, fresa, kiwi y uvas": "Piña, melón, fresa, kiwi y uvas",
+
                     // Secciones
                     "Bocadillos": "Bocadillos",
                     "Sandwiches": "Sandwiches",
@@ -3222,6 +3374,16 @@
                     "Bebidas": "Drinks",
                     "Alergias": "Allergies",
                     "Horario": "Schedule",
+
+                    //Postres
+                    "Postres": "Desserts",
+                    "Frutas": "Fruits",
+                    "Fresas con Nata": "Strawberries with Cream",
+                    "Helado con Fresas": "Ice Cream with Strawberries",
+                    "Helado con Fresas y Nata": "Ice Cream with Strawberries and Cream",
+                    "Banana Split": "Banana Split",
+                    "Bandeja de Fruta Variada": "Assorted Fruit Platter",
+                    "Piña, melón, fresa, kiwi y uvas": "Pineapple, melon, strawberry, kiwi and grapes",
 
                     // Secciones
                     "Bocadillos": "Traditional Spanish Baguettes",
@@ -3490,6 +3652,16 @@
                     "Alergias": "Allergene",
                     "Horario": "Öffnungszeiten",
 
+                    //Postres
+                    "Postres": "Nachspeisen",
+                    "Frutas": "Früchte",
+                    "Fresas con Nata": "Erdbeeren mit Sahne",
+                    "Helado con Fresas": "Eis mit Erdbeeren",
+                    "Helado con Fresas y Nata": "Eis mit Erdbeeren und Sahne",
+                    "Banana Split": "Banana Split",
+                    "Bandeja de Fruta Variada": "Gemischte Obstplatte",
+                    "Piña, melón, fresa, kiwi y uvas": "Ananas, Melone, Erdbeeren, Kiwi und Trauben",
+
                     // Secciones (optimizadas)
                     "Bocadillos": "Belegte Baguettes", // Más preciso para bocadillos españoles
                     "Sandwiches": "Sandwiches", // Se mantiene para sandwiches internacionales
@@ -3735,7 +3907,7 @@
                     "½ Ración Spaghetti Bolognesa": "½ Portion Spaghetti Bolognese",
                     "Nuggets con Patatas Fritas": "Hähnchennuggets mit Pommes",
                     "Escalope con Patatas Fritas": "Schnitzel mit Pommes",
-                    
+
                     // Bebidas
                     "Refrescos": "Erfrischungsgetränke",
                     "Cervezas": "Biere",
