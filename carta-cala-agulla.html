@@ -943,12 +943,12 @@
         <div class="container header-content">
             <div class="header-text">
                 <h1 class="restaurant-name">Chiringuito Cala Agulla</h1>
-                <p>Gastronomía mediterránea frente al mar</p>
+                <p id="header-subtitle">Gastronomía mediterránea frente al mar</p>
             </div>
             <div class="language-selector">
-                <img src="images/b_esp.png" alt="Español" title="Español">
-                <img src="images/b_eng.png" alt="English" title="English">
-                <img src="images/b_ale.png" alt="Deutsch" title="Deutsch">
+                <img src="images/b_esp.png" alt="Español" title="Español" onclick="changeLanguage('es')">
+                <img src="images/b_eng.png" alt="English" title="English" onclick="changeLanguage('en')">
+                <img src="images/b_ale.png" alt="Deutsch" title="Deutsch" onclick="changeLanguage('de')">
             </div>
         </div>
     </header>
@@ -964,126 +964,128 @@
     <main class="container">
         <!-- Bocadillos -->
         <section id="comida" class="menu-section">
-            <h2 class="section-title"><i class="fas fa-bread-slice"></i> Bocadillos</h2>
+            <h2 class="section-title"><i class="fas fa-bread-slice"></i> <span
+                    data-translate="Bocadillos">Bocadillos</span></h2>
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h3 class="item-name">Jamón York</h3>
+                    <h3 class="item-name" data-translate="Jamón York">Jamón York</h3>
                 </div>
                 <div class="item-price">5,90 €</div>
             </div>
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h3 class="item-name">Jamón York y Queso</h3>
+                    <h3 class="item-name" data-translate="Jamón York y Queso">Jamón York y Queso</h3>
                 </div>
                 <div class="item-price">6,50 €</div>
             </div>
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h3 class="item-name">Queso</h3>
+                    <h3 class="item-name" data-translate="Queso">Queso</h3>
                 </div>
                 <div class="item-price">5,90 €</div>
             </div>
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h3 class="item-name">Jamón Serrano</h3>
+                    <h3 class="item-name" data-translate="Jamón Serrano">Jamón Serrano</h3>
                 </div>
                 <div class="item-price">6,50 €</div>
             </div>
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h3 class="item-name">Jamón Serrano y Queso</h3>
+                    <h3 class="item-name" data-translate="Jamón Serrano y Queso">Jamón Serrano y Queso</h3>
                 </div>
                 <div class="item-price">7,10 €</div>
             </div>
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h3 class="item-name">Salami</h3>
+                    <h3 class="item-name" data-translate="Salami">Salami</h3>
                 </div>
                 <div class="item-price">5,90 €</div>
             </div>
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h3 class="item-name">Salami y Queso</h3>
+                    <h3 class="item-name" data-translate="Salami y Queso">Salami y Queso</h3>
                 </div>
                 <div class="item-price">6,50 €</div>
             </div>
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h3 class="item-name">Bacon</h3>
+                    <h3 class="item-name" data-translate="Bacon">Bacon</h3>
                 </div>
                 <div class="item-price">6,30 €</div>
             </div>
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h3 class="item-name">Bacon y Queso</h3>
+                    <h3 class="item-name" data-translate="Bacon y Queso">Bacon y Queso</h3>
                 </div>
                 <div class="item-price">6,90 €</div>
             </div>
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h3 class="item-name">Lomo</h3>
+                    <h3 class="item-name" data-translate="Lomo">Lomo</h3>
                 </div>
                 <div class="item-price">6,60 €</div>
             </div>
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h3 class="item-name">Lomo y Queso</h3>
+                    <h3 class="item-name" data-translate="Lomo y Queso">Lomo y Queso</h3>
                 </div>
                 <div class="item-price">7,20 €</div>
             </div>
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h3 class="item-name">Tortilla Francesa</h3>
+                    <h3 class="item-name" data-translate="Tortilla Francesa">Tortilla Francesa</h3>
                 </div>
                 <div class="item-price">6,90 €</div>
             </div>
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h3 class="item-name">Atún</h3>
+                    <h3 class="item-name" data-translate="Atún">Atún</h3>
                 </div>
                 <div class="item-price">6,70 €</div>
             </div>
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h3 class="item-name">Atún y Queso</h3>
+                    <h3 class="item-name" data-translate="Atún y Queso">Atún y Queso</h3>
                 </div>
                 <div class="item-price">7,30 €</div>
             </div>
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h3 class="item-name">Pollo</h3>
+                    <h3 class="item-name" data-translate="Pollo">Pollo</h3>
                 </div>
                 <div class="item-price">7,90 €</div>
             </div>
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h3 class="item-name">Pollo y Queso</h3>
+                    <h3 class="item-name" data-translate="Pollo y Queso">Pollo y Queso</h3>
                 </div>
                 <div class="item-price">8,50 €</div>
             </div>
 
             <div class="special-item">
-                <span class="special-badge">Especialidad de la casa</span>
+                <span class="special-badge" data-translate="Especialidad de la casa">Especialidad de la casa</span>
                 <div class="menu-item">
                     <div class="item-info">
-                        <h3 class="item-name">Chiringuito</h3>
-                        <p class="item-description">Lomo, queso, bacon, lechuga y tomate</p>
+                        <h3 class="item-name" data-translate="Chiringuito">Chiringuito</h3>
+                        <p class="item-description" data-translate="Lomo, queso, bacon, lechuga y tomate">Lomo, queso,
+                            bacon, lechuga y tomate</p>
                     </div>
                     <div class="item-price">7,50 €</div>
                 </div>
@@ -1092,31 +1094,37 @@
 
         <!-- Sandwiches -->
         <section class="menu-section">
-            <h2 class="section-title"><i class="fas fa-layer-group"></i> Sandwiches</h2>
+            <h2 class="section-title"><i class="fas fa-layer-group"></i> <span
+                    data-translate="Sandwiches">Sandwiches</span></h2>
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h3 class="item-name">Mixto</h3>
-                    <p class="item-description">Jamón york, queso y tomate</p>
+                    <h3 class="item-name" data-translate="Mixto">Mixto</h3>
+                    <p class="item-description" data-translate="Jamón york, queso y tomate">Jamón york, queso y
+                        tomate</p>
                 </div>
                 <div class="item-price">6,50 €</div>
             </div>
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h3 class="item-name">Hawaii</h3>
-                    <p class="item-description">Jamón york, queso, tomate y piña</p>
+                    <h3 class="item-name" data-translate="Hawaii">Hawaii</h3>
+                    <p class="item-description" data-translate="Jamón york, queso, tomate y piña">Jamón york, queso,
+                        tomate y piña</p>
                 </div>
                 <div class="item-price">8,00 €</div>
             </div>
 
             <div class="special-item">
-                <span class="special-badge">Recomendación</span>
+                <span class="special-badge" data-translate="Recomendación">Recomendación</span>
                 <div class="menu-item">
                     <div class="item-info">
-                        <h3 class="item-name">Club</h3>
-                        <p class="item-description">Tres pisos de pan con jamón york, queso, tomate, lechuga, pollo,
-                            huevo, bacon y salsa rosa</p>
+                        <h3 class="item-name" data-translate="Club">Club</h3>
+                        <p class="item-description"
+                            data-translate="Tres pisos de pan con jamón york, queso, tomate, lechuga, pollo, huevo, bacon y salsa rosa">
+                            Tres pisos de pan con jamón york, queso, tomate, lechuga, pollo, huevo, bacon y salsa
+                            rosa
+                        </p>
                     </div>
                     <div class="item-price">12,00 €</div>
                 </div>
@@ -1124,26 +1132,31 @@
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h3 class="item-name">Vegetal</h3>
-                    <p class="item-description">Lechuga, tomate, cebolla, huevo, salsa rosa</p>
+                    <h3 class="item-name" data-translate="Vegetal">Vegetal</h3>
+                    <p class="item-description" data-translate="Lechuga, tomate, cebolla, huevo, salsa rosa">
+                        Lechuga, tomate, cebolla, huevo, salsa rosa</p>
                 </div>
                 <div class="item-price">8,00 €</div>
             </div>
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h3 class="item-name">Especial Atún</h3>
-                    <p class="item-description">Tres pisos de pan con queso, cebolla morada, tomate, lechuga, atún,
-                        huevo y salsa rosa</p>
+                    <h3 class="item-name" data-translate="Especial Atún">Especial Atún</h3>
+                    <p class="item-description"
+                        data-translate="Tres pisos de pan con queso, cebolla morada, tomate, lechuga, atún, huevo y salsa rosa">
+                        Tres pisos de pan con queso, cebolla morada, tomate, lechuga, atún, huevo y salsa rosa
+                    </p>
                 </div>
                 <div class="item-price">12,00 €</div>
             </div>
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h3 class="item-name">Especial Salmón</h3>
-                    <p class="item-description">Tres pisos de pan con lechuga, tomate, salmón, huevo y salsa de mostaza
-                        con miel</p>
+                    <h3 class="item-name" data-translate="Especial Salmón">Especial Salmón</h3>
+                    <p class="item-description"
+                        data-translate="Tres pisos de pan con lechuga, tomate, salmón, huevo y salsa de mostaza con miel">
+                        Tres pisos de pan con lechuga, tomate, salmón, huevo y salsa de mostaza con miel
+                    </p>
                 </div>
                 <div class="item-price">12,00 €</div>
             </div>
@@ -1151,127 +1164,131 @@
 
         <!-- Tapas -->
         <section class="menu-section">
-            <h2 class="section-title"><i class="fas fa-utensils"></i> Tapas</h2>
+            <h2 class="section-title"><i class="fas fa-utensils"></i> <span data-translate="Tapas">Tapas</span></h2>
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h3 class="item-name">Alioli con pan y aceitunas</h3>
+                    <h3 class="item-name" data-translate="Alioli con pan y aceitunas">Alioli con pan y aceitunas</h3>
                 </div>
                 <div class="item-price">6,60 €</div>
             </div>
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h3 class="item-name">Pan de pizza alioli y aceitunas</h3>
+                    <h3 class="item-name" data-translate="Pan de pizza alioli y aceitunas">Pan de pizza alioli y
+                        aceitunas</h3>
                 </div>
                 <div class="item-price">8,90 €</div>
             </div>
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h3 class="item-name">Plato jamón de cebo ibérico</h3>
+                    <h3 class="item-name" data-translate="Plato jamón de cebo ibérico">Plato jamón de cebo ibérico</h3>
                 </div>
                 <div class="item-price">22,00 €</div>
             </div>
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h3 class="item-name">Tabla de quesos</h3>
+                    <h3 class="item-name" data-translate="Tabla de quesos">Tabla de quesos</h3>
                 </div>
                 <div class="item-price">18,00 €</div>
             </div>
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h3 class="item-name">Plato de jamón serrano y queso</h3>
+                    <h3 class="item-name" data-translate="Plato de jamón serrano y queso">Plato de jamón serrano y queso
+                    </h3>
                 </div>
                 <div class="item-price">17,50 €</div>
             </div>
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h3 class="item-name">Pimientos de padrón</h3>
+                    <h3 class="item-name" data-translate="Pimientos de padrón">Pimientos de padrón</h3>
                 </div>
                 <div class="item-price">9,90 €</div>
             </div>
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h3 class="item-name">Dátiles con bacon</h3>
+                    <h3 class="item-name" data-translate="Dátiles con bacon">Dátiles con bacon</h3>
                 </div>
                 <div class="item-price">9,90 €</div>
             </div>
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h3 class="item-name">Puntillas de calamar</h3>
+                    <h3 class="item-name" data-translate="Puntillas de calamar">Puntillas de calamar</h3>
                 </div>
                 <div class="item-price">13,50 €</div>
             </div>
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h3 class="item-name">Rabas de calamar</h3>
+                    <h3 class="item-name" data-translate="Rabas de calamar">Rabas de calamar</h3>
                 </div>
                 <div class="item-price">11,50 €</div>
             </div>
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h3 class="item-name">Papas bravas</h3>
+                    <h3 class="item-name" data-translate="Papas bravas">Papas bravas</h3>
                 </div>
                 <div class="item-price">8,90 €</div>
             </div>
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h3 class="item-name">Papas con alioli</h3>
+                    <h3 class="item-name" data-translate="Papas con alioli">Papas con alioli</h3>
                 </div>
                 <div class="item-price">8,90 €</div>
             </div>
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h3 class="item-name">Papas gratinadas con queso y bacon</h3>
+                    <h3 class="item-name" data-translate="Papas gratinadas con queso y bacon">Papas gratinadas con queso
+                        y bacon</h3>
                 </div>
                 <div class="item-price">11,90 €</div>
             </div>
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h3 class="item-name">Nachos con queso</h3>
+                    <h3 class="item-name" data-translate="Nachos con queso">Nachos con queso</h3>
                 </div>
                 <div class="item-price">12,50 €</div>
             </div>
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h3 class="item-name">Nachos con pollo y queso</h3>
+                    <h3 class="item-name" data-translate="Nachos con pollo y queso">Nachos con pollo y queso</h3>
                 </div>
                 <div class="item-price">14,90 €</div>
             </div>
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h3 class="item-name">Boquerones (fritos)</h3>
+                    <h3 class="item-name" data-translate="Boquerones (fritos)">Boquerones (fritos)</h3>
                 </div>
                 <div class="item-price">11,00 €</div>
             </div>
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h3 class="item-name">Mejillones (a la marinera)</h3>
+                    <h3 class="item-name" data-translate="Mejillones (a la marinera)">Mejillones (a la marinera)</h3>
                 </div>
                 <div class="item-price">15,00 €</div>
             </div>
 
             <div class="special-item">
-                <span class="special-badge">Surtido</span>
+                <span class="special-badge" data-translate="Surtido">Surtido</span>
                 <div class="menu-item">
                     <div class="item-info">
-                        <h3 class="item-name">Surtido de tapas</h3>
-                        <p class="item-description">Pimientos del padrón, dátiles con bacon, boquerones y rabas de
-                            calamar</p>
+                        <h3 class="item-name" data-translate="Surtido de tapas">Surtido de tapas</h3>
+                        <p class="item-description"
+                            data-translate="Pimientos del padrón, dátiles con bacon, boquerones y rabas de calamar">
+                            Pimientos del padrón, dátiles con bacon, boquerones y rabas de calamar</p>
                     </div>
                     <div class="item-price">16,50 €</div>
                 </div>
@@ -1279,28 +1296,30 @@
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h3 class="item-name">Fingers de pollo con chutney</h3>
+                    <h3 class="item-name" data-translate="Fingers de pollo con chutney">Fingers de pollo con chutney
+                    </h3>
                 </div>
                 <div class="item-price">12,00 €</div>
             </div>
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h3 class="item-name">Aceitunas</h3>
+                    <h3 class="item-name" data-translate="Aceitunas">Aceitunas</h3>
                 </div>
                 <div class="item-price">2,50 €</div>
             </div>
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h3 class="item-name">Pan</h3>
+                    <h3 class="item-name" data-translate="Pan">Pan</h3>
                 </div>
                 <div class="item-price">2,00 €</div>
             </div>
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h3 class="item-name">Alitas de pollo (con salsa barbacoa)</h3>
+                    <h3 class="item-name" data-translate="Alitas de pollo (con salsa barbacoa)">Alitas de pollo (con
+                        salsa barbacoa)</h3>
                 </div>
                 <div class="item-price">7,90 €</div>
             </div>
@@ -1308,52 +1327,57 @@
 
         <!-- Pasta -->
         <section class="menu-section">
-            <h2 class="section-title"><i class="fas fa-pasta"></i> Pasta</h2>
+            <h2 class="section-title"><i class="fas fa-pasta"></i> <span data-translate="Pasta">Pasta</span></h2>
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h3 class="item-name">Espaguetti Napolitana</h3>
-                    <p class="item-description">Con salsa de tomate</p>
+                    <h3 class="item-name" data-translate="Espaguetti Napolitana">Espaguetti Napolitana</h3>
+                    <p class="item-description" data-translate="Con salsa de tomate">Con salsa de tomate</p>
                 </div>
                 <div class="item-price">11,50 €</div>
             </div>
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h3 class="item-name">Espaguetti Boloñesa</h3>
-                    <p class="item-description">Carne de cerdo, cebolla, zanahoria, pimiento rojo y verde</p>
+                    <h3 class="item-name" data-translate="Espaguetti Boloñesa">Espaguetti Boloñesa</h3>
+                    <p class="item-description"
+                        data-translate="Carne de cerdo, cebolla, zanahoria, pimiento rojo y verde">Carne de cerdo,
+                        cebolla, zanahoria, pimiento rojo y verde</p>
                 </div>
                 <div class="item-price">14,00 €</div>
             </div>
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h3 class="item-name">Espaguetti Vegetal</h3>
-                    <p class="item-description">Verduras de temporada con nueces, tomate</p>
+                    <h3 class="item-name" data-translate="Espaguetti Vegetal">Espaguetti Vegetal</h3>
+                    <p class="item-description" data-translate="Verduras de temporada con nueces, tomate">Verduras de
+                        temporada con nueces, tomate</p>
                 </div>
                 <div class="item-price">12,50 €</div>
             </div>
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h3 class="item-name">Espaguetti con ajo y aceite</h3>
+                    <h3 class="item-name" data-translate="Espaguetti con ajo y aceite">Espaguetti con ajo y aceite</h3>
                 </div>
                 <div class="item-price">12,50 €</div>
             </div>
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h3 class="item-name">Tallarines al pesto</h3>
+                    <h3 class="item-name" data-translate="Tallarines al pesto">Tallarines al pesto</h3>
                 </div>
                 <div class="item-price">12,50 €</div>
             </div>
 
             <div class="special-item">
-                <span class="special-badge">Especialidad</span>
+                <span class="special-badge" data-translate="Especialidad">Especialidad</span>
                 <div class="menu-item">
                     <div class="item-info">
-                        <h3 class="item-name">Tallarines con gambas</h3>
-                        <p class="item-description">Gambas frescas con ajo, perejil y un toque de limón</p>
+                        <h3 class="item-name" data-translate="Tallarines con gambas">Tallarines con gambas</h3>
+                        <p class="item-description"
+                            data-translate="Gambas frescas con ajo, perejil y un toque de limón">Gambas frescas con ajo,
+                            perejil y un toque de limón</p>
                     </div>
                     <div class="item-price">18,50 €</div>
                 </div>
@@ -1362,70 +1386,80 @@
 
         <!-- Pizzas -->
         <section class="menu-section">
-            <h2 class="section-title"><i class="fas fa-pizza-slice"></i> Pizzas</h2>
+            <h2 class="section-title"><i class="fas fa-pizza-slice"></i> <span data-translate="Pizzas">Pizzas</span>
+            </h2>
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h3 class="item-name">Pizza Margarita</h3>
-                    <p class="item-description">Tomate, mozzarella y orégano</p>
+                    <h3 class="item-name" data-translate="Pizza Margarita">Pizza Margarita</h3>
+                    <p class="item-description" data-translate="Tomate, mozzarella y orégano">Tomate, mozzarella y
+                        orégano</p>
                 </div>
                 <div class="item-price">11,50 €</div>
             </div>
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h3 class="item-name">Pizza Salami</h3>
-                    <p class="item-description">Tomate, mozzarella y salami</p>
+                    <h3 class="item-name" data-translate="Pizza Salami">Pizza Salami</h3>
+                    <p class="item-description" data-translate="Tomate, mozzarella y salami">Tomate, mozzarella y salami
+                    </p>
                 </div>
                 <div class="item-price">12,50 €</div>
             </div>
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h3 class="item-name">Pizza Prosciutto</h3>
-                    <p class="item-description">Tomate, mozzarella y jamón york</p>
+                    <h3 class="item-name" data-translate="Pizza Prosciutto">Pizza Prosciutto</h3>
+                    <p class="item-description" data-translate="Tomate, mozzarella y jamón york">Tomate, mozzarella y
+                        jamón york</p>
                 </div>
                 <div class="item-price">12,50 €</div>
             </div>
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h3 class="item-name">Pizza Hawaii</h3>
-                    <p class="item-description">Tomate, mozzarella, jamón york y piña</p>
+                    <h3 class="item-name" data-translate="Pizza Hawaii">Pizza Hawaii</h3>
+                    <p class="item-description" data-translate="Tomate, mozzarella, jamón york y piña">Tomate,
+                        mozzarella, jamón york y piña</p>
                 </div>
                 <div class="item-price">13,50 €</div>
             </div>
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h3 class="item-name">Pizza Diabolo</h3>
-                    <p class="item-description">Tomate, mozzarella, salami y picante</p>
+                    <h3 class="item-name" data-translate="Pizza Diabolo">Pizza Diabolo</h3>
+                    <p class="item-description" data-translate="Tomate, mozzarella, salami y picante">Tomate,
+                        mozzarella, salami y picante</p>
                 </div>
                 <div class="item-price">14,00 €</div>
             </div>
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h3 class="item-name">Pizza Bacon</h3>
-                    <p class="item-description">Tomate, mozzarella, bacon y cebolla</p>
+                    <h3 class="item-name" data-translate="Pizza Bacon">Pizza Bacon</h3>
+                    <p class="item-description" data-translate="Tomate, mozzarella, bacon y cebolla">Tomate, mozzarella,
+                        bacon y cebolla</p>
                 </div>
                 <div class="item-price">13,50 €</div>
             </div>
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h3 class="item-name">Pizza Tono</h3>
-                    <p class="item-description">Tomate, mozzarella, atún y cebolla</p>
+                    <h3 class="item-name" data-translate="Pizza Tono">Pizza Tono</h3>
+                    <p class="item-description" data-translate="Tomate, mozzarella, atún y cebolla">Tomate, mozzarella,
+                        atún y cebolla</p>
                 </div>
                 <div class="item-price">14,50 €</div>
             </div>
 
             <div class="special-item">
-                <span class="special-badge">Especialidad</span>
+                <span class="special-badge" data-translate="Especialidad">Especialidad</span>
                 <div class="menu-item">
                     <div class="item-info">
-                        <h3 class="item-name">Pizza de la Casa</h3>
-                        <p class="item-description">Tomate, mozzarella, jamón serrano, queso semicurado y uva</p>
+                        <h3 class="item-name" data-translate="Pizza de la Casa">Pizza de la Casa</h3>
+                        <p class="item-description"
+                            data-translate="Tomate, mozzarella, jamón serrano, queso semicurado y uva">Tomate,
+                            mozzarella, jamón serrano, queso semicurado y uva</p>
                     </div>
                     <div class="item-price">16,00 €</div>
                 </div>
@@ -1433,34 +1467,39 @@
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h3 class="item-name">Pizza 4 Quesos</h3>
-                    <p class="item-description">Mozzarella, queso azul, queso ahumado y queso manchego</p>
+                    <h3 class="item-name" data-translate="Pizza 4 Quesos">Pizza 4 Quesos</h3>
+                    <p class="item-description" data-translate="Mozzarella, queso azul, queso ahumado y queso manchego">
+                        Mozzarella, queso azul, queso ahumado y queso manchego</p>
                 </div>
                 <div class="item-price">14,00 €</div>
             </div>
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h3 class="item-name">Pizza Salmón</h3>
-                    <p class="item-description">Tomate, mozzarella y salmón ahumado</p>
+                    <h3 class="item-name" data-translate="Pizza Salmón">Pizza Salmón</h3>
+                    <p class="item-description" data-translate="Tomate, mozzarella y salmón ahumado">Tomate, mozzarella
+                        y salmón ahumado</p>
                 </div>
                 <div class="item-price">16,00 €</div>
             </div>
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h3 class="item-name">Pizza Capresse</h3>
-                    <p class="item-description">Tomate, mozzarella, rodajas de tomate y salsa pesto</p>
+                    <h3 class="item-name" data-translate="Pizza Capresse">Pizza Capresse</h3>
+                    <p class="item-description" data-translate="Tomate, mozzarella, rodajas de tomate y salsa pesto">
+                        Tomate, mozzarella, rodajas de tomate y salsa pesto</p>
                 </div>
                 <div class="item-price">14,00 €</div>
             </div>
 
             <div class="special-item">
-                <span class="special-badge">Firma</span>
+                <span class="special-badge" data-translate="Firma">Firma</span>
                 <div class="menu-item">
                     <div class="item-info">
-                        <h3 class="item-name">Pizza Cala Agulla</h3>
-                        <p class="item-description">Tomate, mozzarella, pimiento, cebolla, jamón york y gambas</p>
+                        <h3 class="item-name" data-translate="Pizza Cala Agulla">Pizza Cala Agulla</h3>
+                        <p class="item-description"
+                            data-translate="Tomate, mozzarella, pimiento, cebolla, jamón york y gambas">Tomate,
+                            mozzarella, pimiento, cebolla, jamón york y gambas</p>
                     </div>
                     <div class="item-price">17,50 €</div>
                 </div>
@@ -1468,23 +1507,26 @@
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h3 class="item-name">Pizza Proscrito e Funghi</h3>
-                    <p class="item-description">Tomate, mozzarella, jamón york y champiñones</p>
+                    <h3 class="item-name" data-translate="Pizza Proscrito e Funghi">Pizza Proscrito e Funghi</h3>
+                    <p class="item-description" data-translate="Tomate, mozzarella, jamón york y champiñones">Tomate,
+                        mozzarella, jamón york y champiñones</p>
                 </div>
                 <div class="item-price">13,50 €</div>
             </div>
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h3 class="item-name">Pizza Caprichosa</h3>
-                    <p class="item-description">Tomate, mozzarella, jamón york, champiñones, alcachofas y huevo</p>
+                    <h3 class="item-name" data-translate="Pizza Caprichosa">Pizza Caprichosa</h3>
+                    <p class="item-description"
+                        data-translate="Tomate, mozzarella, jamón york, champiñones, alcachofas y huevo">Tomate,
+                        mozzarella, jamón york, champiñones, alcachofas y huevo</p>
                 </div>
                 <div class="item-price">15,00 €</div>
             </div>
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h3 class="item-name">Pizza Barbacoa</h3>
+                    <h3 class="item-name" data-translate="Pizza Barbacoa">Pizza Barbacoa</h3>
                 </div>
                 <div class="item-price">15,00 €</div>
             </div>
@@ -1492,57 +1534,61 @@
 
         <!-- Ensaladas -->
         <section class="menu-section">
-            <h2 class="section-title"><i class="fas fa-leaf"></i> Ensaladas</h2>
+            <h2 class="section-title"><i class="fas fa-leaf"></i> <span data-translate="Ensaladas">Ensaladas</span></h2>
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h3 class="item-name">Gazpacho</h3>
-                    <p class="item-description">En temporada</p>
+                    <h3 class="item-name" data-translate="Gazpacho">Gazpacho</h3>
+                    <p class="item-description" data-translate="En temporada">En temporada</p>
                 </div>
                 <div class="item-price">6,00 €</div>
             </div>
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h3 class="item-name">Tomate</h3>
-                    <p class="item-description">Tomate y cebolla</p>
+                    <h3 class="item-name" data-translate="Tomate">Tomate</h3>
+                    <p class="item-description" data-translate="Tomate y cebolla">Tomate y cebolla</p>
                 </div>
                 <div class="item-price">10,50 €</div>
             </div>
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h3 class="item-name">Verde</h3>
-                    <p class="item-description">Mezcla de lechugas, maíz, tomate, cebolla, zanahoria y pimiento verde
-                    </p>
+                    <h3 class="item-name" data-translate="Verde">Verde</h3>
+                    <p class="item-description"
+                        data-translate="Mezcla de lechugas, maíz, tomate, cebolla, zanahoria y pimiento verde">Mezcla de
+                        lechugas, maíz, tomate, cebolla, zanahoria y pimiento verde</p>
                 </div>
                 <div class="item-price">10,50 €</div>
             </div>
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h3 class="item-name">Atún</h3>
-                    <p class="item-description">Mezcla de lechugas, tomate, cebolla, pimiento, zanahoria, maíz,
-                        aceitunas y atún</p>
+                    <h3 class="item-name" data-translate="Atún">Atún</h3>
+                    <p class="item-description"
+                        data-translate="Mezcla de lechugas, tomate, cebolla, pimiento, zanahoria, maíz, aceitunas y atún">
+                        Mezcla de lechugas, tomate, cebolla, pimiento, zanahoria, maíz, aceitunas y atún</p>
                 </div>
                 <div class="item-price">14,50 €</div>
             </div>
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h3 class="item-name">Caprese</h3>
-                    <p class="item-description">Tomate, mozzarella y albahaca</p>
+                    <h3 class="item-name" data-translate="Caprese">Caprese</h3>
+                    <p class="item-description" data-translate="Tomate, mozzarella y albahaca">Tomate, mozzarella y
+                        albahaca</p>
                 </div>
                 <div class="item-price">14,00 €</div>
             </div>
 
             <div class="special-item">
-                <span class="special-badge">Clásica</span>
+                <span class="special-badge" data-translate="Clásica">Clásica</span>
                 <div class="menu-item">
                     <div class="item-info">
-                        <h3 class="item-name">Cesar</h3>
-                        <p class="item-description">Tiras de pollo, escamas de parmesano, croutons, cebolla morada y
-                            salsa cesar</p>
+                        <h3 class="item-name" data-translate="Cesar">Cesar</h3>
+                        <p class="item-description"
+                            data-translate="Tiras de pollo, escamas de parmesano, croutons, cebolla morada y salsa cesar">
+                            Tiras de pollo, escamas de parmesano, croutons, cebolla morada y salsa cesar</p>
                     </div>
                     <div class="item-price">18,00 €</div>
                 </div>
@@ -1550,29 +1596,33 @@
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h3 class="item-name">Pollo con frutas</h3>
-                    <p class="item-description">Mezcla de lechugas, tomate, cebolla, pollo, salsa rosa, nueces y manzana
-                    </p>
+                    <h3 class="item-name" data-translate="Pollo con frutas">Pollo con frutas</h3>
+                    <p class="item-description"
+                        data-translate="Mezcla de lechugas, tomate, cebolla, pollo, salsa rosa, nueces y manzana">Mezcla
+                        de lechugas, tomate, cebolla, pollo, salsa rosa, nueces y manzana</p>
                 </div>
                 <div class="item-price">16,00 €</div>
             </div>
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h3 class="item-name">Salmón</h3>
-                    <p class="item-description">Mezcla de lechugas, tomate, zanahoria, salmón, tomate seco y vinagreta
-                    </p>
+                    <h3 class="item-name" data-translate="Salmón">Salmón</h3>
+                    <p class="item-description"
+                        data-translate="Mezcla de lechugas, tomate, zanahoria, salmón, tomate seco y vinagreta">Mezcla
+                        de lechugas, tomate, zanahoria, salmón, tomate seco y vinagreta</p>
                 </div>
                 <div class="item-price">17,00 €</div>
             </div>
 
             <div class="special-item">
-                <span class="special-badge">Gourmet</span>
+                <span class="special-badge" data-translate="Gourmet">Gourmet</span>
                 <div class="menu-item">
                     <div class="item-info">
-                        <h3 class="item-name">Tibia</h3>
-                        <p class="item-description">Mezcla de lechugas, nueces, tomate seco, zanahoria, pipas de
-                            calabaza, queso de cabra a la plancha y confitura de higos</p>
+                        <h3 class="item-name" data-translate="Tibia">Tibia</h3>
+                        <p class="item-description"
+                            data-translate="Mezcla de lechugas, nueces, tomate seco, zanahoria, pipas de calabaza, queso de cabra a la plancha y confitura de higos">
+                            Mezcla de lechugas, nueces, tomate seco, zanahoria, pipas de calabaza, queso de cabra a la
+                            plancha y confitura de higos</p>
                     </div>
                     <div class="item-price">17,00 €</div>
                 </div>
@@ -1580,20 +1630,22 @@
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h3 class="item-name">Piña Feta</h3>
-                    <p class="item-description">Avocado, piña, feta, bacon, cebolla frita, lechuga, salsa mostaza y
-                        naranja</p>
+                    <h3 class="item-name" data-translate="Piña Feta">Piña Feta</h3>
+                    <p class="item-description"
+                        data-translate="Avocado, piña, feta, bacon, cebolla frita, lechuga, salsa mostaza y naranja">
+                        Avocado, piña, feta, bacon, cebolla frita, lechuga, salsa mostaza y naranja</p>
                 </div>
                 <div class="item-price">17,00 €</div>
             </div>
 
             <div class="special-item">
-                <span class="special-badge">Especial</span>
+                <span class="special-badge" data-translate="Especial">Especial</span>
                 <div class="menu-item">
                     <div class="item-info">
-                        <h3 class="item-name">Ensalada Tropical</h3>
-                        <p class="item-description">Mezcla de lechugas, aguacate, piña, naranja, manzana, tomate cherry,
-                            gambas y salsa rosa</p>
+                        <h3 class="item-name" data-translate="Ensalada Tropical">Ensalada Tropical</h3>
+                        <p class="item-description"
+                            data-translate="Mezcla de lechugas, aguacate, piña, naranja, manzana, tomate cherry, gambas y salsa rosa">
+                            Mezcla de lechugas, aguacate, piña, naranja, manzana, tomate cherry, gambas y salsa rosa</p>
                     </div>
                     <div class="item-price">19,00 €</div>
                 </div>
@@ -1602,97 +1654,106 @@
 
         <!-- Salsas -->
         <section class="menu-section sauces-section">
-            <h2 class="section-title"><i class="fas fa-mortar-pestle"></i> Salsas</h2>
+            <h2 class="section-title"><i class="fas fa-mortar-pestle"></i> <span data-translate="Salsas">Salsas</span>
+            </h2>
 
             <div class="sauces-container">
                 <div class="sauce-item">
                     <div class="sauce-info">
-                        <h3 class="sauce-name">Yogur</h3>
-                        <p class="sauce-description">Crema de yogur natural con especias</p>
+                        <h3 class="sauce-name" data-translate="Yogur">Yogur</h3>
+                        <p class="sauce-description" data-translate="Crema de yogur natural con especias">Crema de yogur
+                            natural con especias</p>
                     </div>
                     <div class="sauce-price">3,00 €</div>
                 </div>
 
                 <div class="sauce-item">
                     <div class="sauce-info">
-                        <h3 class="sauce-name">Rosa</h3>
-                        <p class="sauce-description">Mezcla de mayonesa y ketchup</p>
+                        <h3 class="sauce-name" data-translate="Rosa">Rosa</h3>
+                        <p class="sauce-description" data-translate="Mezcla de mayonesa y ketchup">Mezcla de mayonesa y
+                            ketchup</p>
                     </div>
                     <div class="sauce-price">3,00 €</div>
                 </div>
 
                 <div class="sauce-item">
                     <div class="sauce-info">
-                        <h3 class="sauce-name">Alioli</h3>
-                        <p class="sauce-description">Emulsión de ajo y aceite de oliva</p>
+                        <h3 class="sauce-name" data-translate="Alioli">Alioli</h3>
+                        <p class="sauce-description" data-translate="Emulsión de ajo y aceite de oliva">Emulsión de ajo
+                            y aceite de oliva</p>
                     </div>
                     <div class="sauce-price">3,00 €</div>
                 </div>
 
                 <div class="sauce-item">
                     <div class="sauce-info">
-                        <h3 class="sauce-name">Salsa César</h3>
-                        <p class="sauce-description">Clásica salsa con anchoas y parmesano</p>
+                        <h3 class="sauce-name" data-translate="Salsa César">Salsa César</h3>
+                        <p class="sauce-description" data-translate="Clásica salsa con anchoas y parmesano">Clásica
+                            salsa con anchoas y parmesano</p>
                     </div>
                     <div class="sauce-price">3,00 €</div>
                 </div>
 
                 <div class="sauce-item">
                     <div class="sauce-info">
-                        <h3 class="sauce-name">Mostaza Miel</h3>
-                        <p class="sauce-description">Equilibrio perfecto entre dulce y picante</p>
+                        <h3 class="sauce-name" data-translate="Mostaza Miel">Mostaza Miel</h3>
+                        <p class="sauce-description" data-translate="Equilibrio perfecto entre dulce y picante">
+                            Equilibrio perfecto entre dulce y picante</p>
                     </div>
                     <div class="sauce-price">3,00 €</div>
                 </div>
-            </div>
-
-            <div class="sauces-note">
-                <p><i class="fas fa-info-circle"></i> Todas nuestras salsas son elaboradas artesanalmente</p>
             </div>
         </section>
 
         <!-- Carnes -->
         <section class="menu-section">
-            <h2 class="section-title"><i class="fas fa-drumstick-bite"></i> Carnes</h2>
+            <h2 class="section-title"><i class="fas fa-drumstick-bite"></i> <span data-translate="Carnes">Carnes</span>
+            </h2>
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h3 class="item-name">Pinchitos de Cerdo</h3>
-                    <p class="item-description">2 pinchos con patatas fritas y ensalada</p>
+                    <h3 class="item-name" data-translate="Pinchitos de Cerdo">Pinchitos de Cerdo</h3>
+                    <p class="item-description" data-translate="2 pinchos con patatas fritas y ensalada">2 pinchos con
+                        patatas fritas y ensalada</p>
                 </div>
                 <div class="item-price">17,90 €</div>
             </div>
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h3 class="item-name">Brochetas de Pollo</h3>
-                    <p class="item-description">2 brochetas con patatas fritas y ensalada</p>
+                    <h3 class="item-name" data-translate="Brochetas de Pollo">Brochetas de Pollo</h3>
+                    <p class="item-description" data-translate="2 brochetas con patatas fritas y ensalada">2 brochetas
+                        con patatas fritas y ensalada</p>
                 </div>
                 <div class="item-price">17,90 €</div>
             </div>
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h3 class="item-name">Escalope de Cerdo</h3>
-                    <p class="item-description">Con patatas fritas y ensalada</p>
+                    <h3 class="item-name" data-translate="Escalope de Cerdo">Escalope de Cerdo</h3>
+                    <p class="item-description" data-translate="Con patatas fritas y ensalada">Con patatas fritas y
+                        ensalada</p>
                 </div>
                 <div class="item-price">16,50 €</div>
             </div>
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h3 class="item-name">Pechuga de Pollo</h3>
-                    <p class="item-description">Con patatas fritas y ensalada</p>
+                    <h3 class="item-name" data-translate="Pechuga de Pollo">Pechuga de Pollo</h3>
+                    <p class="item-description" data-translate="Con patatas fritas y ensalada">Con patatas fritas y
+                        ensalada</p>
                 </div>
                 <div class="item-price">16,50 €</div>
             </div>
 
             <div class="special-item">
-                <span class="special-badge">Recomendación</span>
+                <span class="special-badge" data-translate="Recomendación">Recomendación</span>
                 <div class="menu-item">
                     <div class="item-info">
-                        <h3 class="item-name">Cordon Blue de Cerdo Casero</h3>
-                        <p class="item-description">Con patatas fritas y ensalada</p>
+                        <h3 class="item-name" data-translate="Cordon Blue de Cerdo Casero">Cordon Blue de Cerdo Casero
+                        </h3>
+                        <p class="item-description" data-translate="Con patatas fritas y ensalada">Con patatas fritas y
+                            ensalada</p>
                     </div>
                     <div class="item-price">17,90 €</div>
                 </div>
@@ -1701,22 +1762,23 @@
 
         <!-- Pescados -->
         <section class="menu-section">
-            <h2 class="section-title"><i class="fas fa-fish"></i> Pescados</h2>
+            <h2 class="section-title"><i class="fas fa-fish"></i> <span data-translate="Pescados">Pescados</span></h2>
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h3 class="item-name">Sardinas a la Plancha</h3>
-                    <p class="item-description">4 sardinas con ensalada</p>
+                    <h3 class="item-name" data-translate="Sardinas a la Plancha">Sardinas a la Plancha</h3>
+                    <p class="item-description" data-translate="4 sardinas con ensalada">4 sardinas con ensalada</p>
                 </div>
                 <div class="item-price">13,50 €</div>
             </div>
 
             <div class="special-item">
-                <span class="special-badge">Especialidad</span>
+                <span class="special-badge" data-translate="Especialidad">Especialidad</span>
                 <div class="menu-item">
                     <div class="item-info">
-                        <h3 class="item-name">Gambas al Ajillo</h3>
-                        <p class="item-description">Gambas frescas al ajillo con guindilla</p>
+                        <h3 class="item-name" data-translate="Gambas al Ajillo">Gambas al Ajillo</h3>
+                        <p class="item-description" data-translate="Gambas frescas al ajillo con guindilla">Gambas
+                            frescas al ajillo con guindilla</p>
                     </div>
                     <div class="item-price">18,50 €</div>
                 </div>
@@ -1724,26 +1786,29 @@
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h3 class="item-name">Calamar a la Plancha</h3>
-                    <p class="item-description">Con patatas fritas y ensalada</p>
+                    <h3 class="item-name" data-translate="Calamar a la Plancha">Calamar a la Plancha</h3>
+                    <p class="item-description" data-translate="Con patatas fritas y ensalada">Con patatas fritas y
+                        ensalada</p>
                 </div>
                 <div class="item-price">21,90 €</div>
             </div>
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h3 class="item-name">Salmón a la Plancha</h3>
-                    <p class="item-description">Con patatas fritas y ensalada</p>
+                    <h3 class="item-name" data-translate="Salmón a la Plancha">Salmón a la Plancha</h3>
+                    <p class="item-description" data-translate="Con patatas fritas y ensalada">Con patatas fritas y
+                        ensalada</p>
                 </div>
                 <div class="item-price">17,50 €</div>
             </div>
 
             <div class="special-item">
-                <span class="special-badge">Premium</span>
+                <span class="special-badge" data-translate="Premium">Premium</span>
                 <div class="menu-item">
                     <div class="item-info">
-                        <h3 class="item-name">Langostinos a la Plancha</h3>
-                        <p class="item-description">Langostinos frescos con limón</p>
+                        <h3 class="item-name" data-translate="Langostinos a la Plancha">Langostinos a la Plancha</h3>
+                        <p class="item-description" data-translate="Langostinos frescos con limón">Langostinos frescos
+                            con limón</p>
                     </div>
                     <div class="item-price">19,50 €</div>
                 </div>
@@ -1752,67 +1817,79 @@
 
         <!-- Hamburguesas -->
         <section class="menu-section">
-            <h2 class="section-title"><i class="fas fa-hamburger"></i> Hamburguesas</h2>
+            <h2 class="section-title"><i class="fas fa-hamburger"></i> <span
+                    data-translate="Hamburguesas">Hamburguesas</span></h2>
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h3 class="item-name">Normal</h3>
-                    <p class="item-description">Carne mixta de cerdo y ternera con tomate, cebolla y lechuga</p>
+                    <h3 class="item-name" data-translate="Normal">Normal</h3>
+                    <p class="item-description"
+                        data-translate="Carne mixta de cerdo y ternera con tomate, cebolla y lechuga">Carne mixta de
+                        cerdo y ternera con tomate, cebolla y lechuga</p>
                 </div>
                 <div class="item-price">6,00 €</div>
             </div>
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h3 class="item-name">Queso</h3>
-                    <p class="item-description">Carne mixta con tomate, cebolla, lechuga y queso fundido</p>
+                    <h3 class="item-name" data-translate="Queso">Queso</h3>
+                    <p class="item-description"
+                        data-translate="Carne mixta con tomate, cebolla, lechuga y queso fundido">Carne mixta con
+                        tomate, cebolla, lechuga y queso fundido</p>
                 </div>
                 <div class="item-price">6,60 €</div>
             </div>
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h3 class="item-name">Bacon y Queso</h3>
-                    <p class="item-description">Carne mixta con tomate, cebolla, lechuga, bacon crujiente y queso</p>
+                    <h3 class="item-name" data-translate="Bacon y Queso">Bacon y Queso</h3>
+                    <p class="item-description"
+                        data-translate="Carne mixta con tomate, cebolla, lechuga, bacon crujiente y queso">Carne mixta
+                        con tomate, cebolla, lechuga, bacon crujiente y queso</p>
                 </div>
                 <div class="item-price">7,20 €</div>
             </div>
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h3 class="item-name">Pollo</h3>
-                    <p class="item-description">Pechuga de pollo con tomate, cebolla y lechuga</p>
+                    <h3 class="item-name" data-translate="Pollo">Pollo</h3>
+                    <p class="item-description" data-translate="Pechuga de pollo con tomate, cebolla y lechuga">Pechuga
+                        de pollo con tomate, cebolla y lechuga</p>
                 </div>
                 <div class="item-price">6,60 €</div>
             </div>
 
             <div class="menu-item">
                 <div class="item-info">
-                    <h3 class="item-name">Pollo con Queso</h3>
-                    <p class="item-description">Pechuga de pollo con tomate, cebolla, lechuga y queso fundido</p>
+                    <h3 class="item-name" data-translate="Pollo con Queso">Pollo con Queso</h3>
+                    <p class="item-description"
+                        data-translate="Pechuga de pollo con tomate, cebolla, lechuga y queso fundido">Pechuga de pollo
+                        con tomate, cebolla, lechuga y queso fundido</p>
                 </div>
                 <div class="item-price">7,10 €</div>
             </div>
 
             <div class="special-item">
-                <span class="special-badge">XXL</span>
+                <span class="special-badge" data-translate="XXL">XXL</span>
                 <div class="menu-item">
                     <div class="item-info">
-                        <h3 class="item-name">XXL Burger</h3>
-                        <p class="item-description">Carne de ternera con tomate, cebolla, lechuga, bacon, huevo, queso y
-                            patatas fritas</p>
+                        <h3 class="item-name" data-translate="XXL Burger">XXL Burger</h3>
+                        <p class="item-description"
+                            data-translate="Carne de ternera con tomate, cebolla, lechuga, bacon, huevo, queso y patatas fritas">
+                            Carne de ternera con tomate, cebolla, lechuga, bacon, huevo, queso y patatas fritas</p>
                     </div>
                     <div class="item-price">13,50 €</div>
                 </div>
             </div>
 
             <div class="special-item">
-                <span class="special-badge">Especialidad</span>
+                <span class="special-badge" data-translate="Especialidad">Especialidad</span>
                 <div class="menu-item">
                     <div class="item-info">
-                        <h3 class="item-name">Big Burger Cala Agulla</h3>
-                        <p class="item-description">200gr de vacuno con tomate, cebolla, lechuga, bacon, queso, huevo y
-                            patatas fritas</p>
+                        <h3 class="item-name" data-translate="Big Burger Cala Agulla">Big Burger Cala Agulla</h3>
+                        <p class="item-description"
+                            data-translate="200gr de vacuno con tomate, cebolla, lechuga, bacon, queso, huevo y patatas fritas">
+                            200gr de vacuno con tomate, cebolla, lechuga, bacon, queso, huevo y patatas fritas</p>
                     </div>
                     <div class="item-price">17,00 €</div>
                 </div>
@@ -1821,49 +1898,45 @@
 
         <!-- Patatas -->
         <section class="menu-section sides-section">
-            <h2 class="section-title"><i class="fas fa-potato"></i> Patatas</h2>
+            <h2 class="section-title"><i class="fas fa-potato"></i> <span data-translate="Patatas">Patatas</span></h2>
 
             <div class="sides-grid">
                 <div class="side-item">
                     <div class="side-info">
-                        <h3 class="side-name">Pequeñas</h3>
-                        <p class="side-description">Ración individual de patatas fritas crujientes</p>
+                        <h3 class="side-name" data-translate="Pequeñas">Pequeñas</h3>
                     </div>
                     <div class="side-price">5,50 €</div>
                 </div>
 
                 <div class="side-item">
                     <div class="side-info">
-                        <h3 class="side-name">Grandes</h3>
-                        <p class="side-description">Ración para compartir de patatas fritas</p>
+                        <h3 class="side-name" data-translate="Grandes">Grandes</h3>
                     </div>
                     <div class="side-price">8,00 €</div>
                 </div>
-            </div>
-
-            <div class="side-options">
-                <p><i class="fas fa-check-circle"></i> Disponibles con: Alioli, Brava o Queso+Bacon (+1,50€)</p>
             </div>
         </section>
 
         <!-- Salchichas -->
         <section class="menu-section hotdogs-section">
-            <h2 class="section-title"><i class="fas fa-hotdog"></i> Salchichas</h2>
+            <h2 class="section-title"><i class="fas fa-hotdog"></i> <span data-translate="Salchichas">Salchichas</span>
+            </h2>
 
             <div class="hotdog-item">
                 <div class="hotdog-info">
-                    <h3 class="hotdog-name">Hot Dog</h3>
-                    <p class="hotdog-description">Pan fresco con salchicha Frankfurt y toppings</p>
+                    <h3 class="hotdog-name" data-translate="Hot Dog">Hot Dog</h3>
                 </div>
                 <div class="hotdog-price">6,00 €</div>
             </div>
 
             <div class="special-item hotdog-special">
-                <span class="special-badge">Recomendado</span>
+                <span class="special-badge" data-translate="Recomendado">Recomendado</span>
                 <div class="hotdog-item">
                     <div class="hotdog-info">
-                        <h3 class="hotdog-name">Hot Dog Especial</h3>
-                        <p class="hotdog-description">Con bacon crujiente, cebolla seca y queso fundido</p>
+                        <h3 class="hotdog-name" data-translate="Hot Dog Especial">Hot Dog Especial</h3>
+                        <p class="hotdog-description"
+                            data-translate="Con bacon crujiente, cebolla seca y queso fundido">Con bacon crujiente,
+                            cebolla seca y queso fundido</p>
                     </div>
                     <div class="hotdog-price">7,00 €</div>
                 </div>
@@ -1871,8 +1944,7 @@
 
             <div class="hotdog-item combo-item">
                 <div class="hotdog-info">
-                    <h3 class="hotdog-name">Hot Dog con Patatas Fritas</h3>
-                    <p class="hotdog-description">Incluye ración pequeña de patatas</p>
+                    <h3 class="hotdog-name" data-translate="Hot Dog con Patatas Fritas">Hot Dog con Patatas Fritas</h3>
                 </div>
                 <div class="hotdog-price">9,00 €</div>
             </div>
@@ -1880,14 +1952,16 @@
 
         <!-- Menú Infantil -->
         <section class="menu-section kids-section">
-            <h2 class="section-title"><i class="fas fa-child"></i> Para Niños</h2>
+            <h2 class="section-title"><i class="fas fa-child"></i> <span data-translate="Para Niños">Para Niños</span>
+            </h2>
 
             <div class="special-item kid-special">
-                <span class="special-badge"><i class="fas fa-star"></i> Popular</span>
+                <span class="special-badge"><i class="fas fa-star"></i> <span
+                        data-translate="Popular">Popular</span></span>
                 <div class="menu-item">
                     <div class="item-info">
-                        <h3 class="item-name">½ Ración Spaghetti Bolognesa</h3>
-                        <p class="item-description">Pasta con nuestra salsa de carne casera</p>
+                        <h3 class="item-name" data-translate="½ Ración Spaghetti Bolognesa">½ Ración Spaghetti Bolognesa
+                        </h3>
                     </div>
                     <div class="item-price">8,00 €</div>
                 </div>
@@ -1895,16 +1969,14 @@
 
             <div class="menu-item kid-item">
                 <div class="item-info">
-                    <h3 class="item-name">Nuggets con Patatas Fritas</h3>
-                    <p class="item-description">Crujientes nuggets de pollo con patatas</p>
+                    <h3 class="item-name" data-translate="Nuggets con Patatas Fritas">Nuggets con Patatas Fritas</h3>
                 </div>
                 <div class="item-price">8,00 €</div>
             </div>
 
             <div class="menu-item kid-item">
                 <div class="item-info">
-                    <h3 class="item-name">Escalope con Patatas Fritas</h3>
-                    <p class="item-description">Filete de pollo empanado con patatas</p>
+                    <h3 class="item-name" data-translate="Escalope con Patatas Fritas">Escalope con Patatas Fritas</h3>
                 </div>
                 <div class="item-price">9,50 €</div>
             </div>
@@ -2875,6 +2947,852 @@
                         link.classList.add('active');
                     }
                 });
+            });
+        </script>
+
+        <script>
+            // Diccionario completo de traducciones
+            const translations = {
+                es: {
+                    // Header y navegación
+                    "Gastronomía mediterránea frente al mar": "Gastronomía mediterránea frente al mar",
+                    "Comida": "Comida",
+                    "Postres": "Postres",
+                    "Bebidas": "Bebidas",
+                    "Alergias": "Alergias",
+                    "Horario": "Horario",
+
+                    // Secciones
+                    "Bocadillos": "Bocadillos",
+                    "Sandwiches": "Sandwiches",
+                    "Tapas": "Tapas",
+                    "Pasta": "Pasta",
+                    "Pizzas": "Pizzas",
+                    "Ensaladas": "Ensaladas",
+                    "Salsas": "Salsas",
+                    "Carnes": "Carnes",
+                    "Pescados": "Pescados",
+                    "Hamburguesas": "Hamburguesas",
+                    "Patatas": "Patatas",
+                    "Salchichas": "Salchichas",
+                    "Para Niños": "Para Niños",
+
+                    //Productos
+                    // Títulos
+                    "Bocadillos": "Bocadillos",
+                    "Especialidad de la casa": "Especialidad de la casa",
+
+                    // Productos individuales
+                    "Jamón York": "Jamón York",
+                    "Jamón York y Queso": "Jamón York y Queso",
+                    "Queso": "Queso",
+                    "Jamón Serrano": "Jamón Serrano",
+                    "Jamón Serrano y Queso": "Jamón Serrano y Queso",
+                    "Salami": "Salami",
+                    "Salami y Queso": "Salami y Queso",
+                    "Bacon": "Bacon",
+                    "Bacon y Queso": "Bacon y Queso",
+                    "Lomo": "Lomo",
+                    "Lomo y Queso": "Lomo y Queso",
+                    "Tortilla Francesa": "Tortilla Francesa",
+                    "Atún": "Atún",
+                    "Atún y Queso": "Atún y Queso",
+                    "Pollo": "Pollo",
+                    "Pollo y Queso": "Pollo y Queso",
+
+                    // Especialidades
+                    "Chiringuito": "Chiringuito",
+                    "Lomo, queso, bacon, lechuga y tomate": "Lomo, queso, bacon, lechuga y tomate",
+
+                    //Sandwiches
+                    "Sandwiches": "Sandwiches",
+                    "Mixto": "Mixto",
+                    "Jamón york, queso y tomate": "Jamón york, queso y tomate",
+                    "Hawaii": "Hawaii",
+                    "Jamón york, queso, tomate y piña": "Jamón york, queso, tomate y piña",
+                    "Recomendación": "Recomendación",
+                    "Club": "Club",
+                    "Tres pisos de pan con jamón york, queso, tomate, lechuga, pollo, huevo, bacon y salsa rosa": "Tres pisos de pan con jamón york, queso, tomate, lechuga, pollo, huevo, bacon y salsa rosa",
+                    "Vegetal": "Vegetal",
+                    "Lechuga, tomate, cebolla, huevo, salsa rosa": "Lechuga, tomate, cebolla, huevo, salsa rosa",
+                    "Especial Atún": "Especial Atún",
+                    "Tres pisos de pan con queso, cebolla morada, tomate, lechuga, atún, huevo y salsa rosa": "Tres pisos de pan con queso, cebolla morada, tomate, lechuga, atún, huevo y salsa rosa",
+                    "Especial Salmón": "Especial Salmón",
+                    "Tres pisos de pan con lechuga, tomate, salmón, huevo y salsa de mostaza con miel": "Tres pisos de pan con lechuga, tomate, salmón, huevo y salsa de mostaza con miel",
+
+                    //Tapas
+                    "Tapas": "Tapas",
+                    "Alioli con pan y aceitunas": "Alioli con pan y aceitunas",
+                    "Pan de pizza alioli y aceitunas": "Pan de pizza alioli y aceitunas",
+                    "Plato jamón de cebo ibérico": "Plato jamón de cebo ibérico",
+                    "Tabla de quesos": "Tabla de quesos",
+                    "Plato de jamón serrano y queso": "Plato de jamón serrano y queso",
+                    "Pimientos de padrón": "Pimientos de padrón",
+                    "Dátiles con bacon": "Dátiles con bacon",
+                    "Puntillas de calamar": "Puntillas de calamar",
+                    "Rabas de calamar": "Rabas de calamar",
+                    "Papas bravas": "Papas bravas",
+                    "Papas con alioli": "Papas con alioli",
+                    "Papas gratinadas con queso y bacon": "Papas gratinadas con queso y bacon",
+                    "Nachos con queso": "Nachos con queso",
+                    "Nachos con pollo y queso": "Nachos con pollo y queso",
+                    "Boquerones (fritos)": "Boquerones (fritos)",
+                    "Mejillones (a la marinera)": "Mejillones (a la marinera)",
+                    "Surtido": "Surtido",
+                    "Surtido de tapas": "Surtido de tapas",
+                    "Pimientos del padrón, dátiles con bacon, boquerones y rabas de calamar": "Pimientos del padrón, dátiles con bacon, boquerones y rabas de calamar",
+                    "Fingers de pollo con chutney": "Fingers de pollo con chutney",
+                    "Aceitunas": "Aceitunas",
+                    "Pan": "Pan",
+                    "Alitas de pollo (con salsa barbacoa)": "Alitas de pollo (con salsa barbacoa)",
+
+                    //Pasta
+                    "Pasta": "Pasta",
+                    "Espaguetti Napolitana": "Espaguetti Napolitana",
+                    "Con salsa de tomate": "Con salsa de tomate",
+                    "Espaguetti Boloñesa": "Espaguetti Boloñesa",
+                    "Carne de cerdo, cebolla, zanahoria, pimiento rojo y verde": "Carne de cerdo, cebolla, zanahoria, pimiento rojo y verde",
+                    "Espaguetti Vegetal": "Espaguetti Vegetal",
+                    "Verduras de temporada con nueces, tomate": "Verduras de temporada con nueces, tomate",
+                    "Espaguetti con ajo y aceite": "Espaguetti con ajo y aceite",
+                    "Tallarines al pesto": "Tallarines al pesto",
+                    "Especialidad": "Especialidad",
+                    "Tallarines con gambas": "Tallarines con gambas",
+                    "Gambas frescas con ajo, perejil y un toque de limón": "Gambas frescas con ajo, perejil y un toque de limón",
+
+                    //Pizza
+                    "Pizzas": "Pizzas",
+                    "Pizza Margarita": "Pizza Margarita",
+                    "Tomate, mozzarella y orégano": "Tomate, mozzarella y orégano",
+                    "Pizza Salami": "Pizza Salami",
+                    "Tomate, mozzarella y salami": "Tomate, mozzarella y salami",
+                    "Pizza Prosciutto": "Pizza Prosciutto",
+                    "Tomate, mozzarella y jamón york": "Tomate, mozzarella y jamón york",
+                    "Pizza Hawaii": "Pizza Hawaii",
+                    "Tomate, mozzarella, jamón york y piña": "Tomate, mozzarella, jamón york y piña",
+                    "Pizza Diabolo": "Pizza Diabolo",
+                    "Tomate, mozzarella, salami y picante": "Tomate, mozzarella, salami y picante",
+                    "Pizza Bacon": "Pizza Bacon",
+                    "Tomate, mozzarella, bacon y cebolla": "Tomate, mozzarella, bacon y cebolla",
+                    "Pizza Tono": "Pizza Tono",
+                    "Tomate, mozzarella, atún y cebolla": "Tomate, mozzarella, atún y cebolla",
+                    "Especialidad": "Especialidad",
+                    "Pizza de la Casa": "Pizza de la Casa",
+                    "Tomate, mozzarella, jamón serrano, queso semicurado y uva": "Tomate, mozzarella, jamón serrano, queso semicurado y uva",
+                    "Pizza 4 Quesos": "Pizza 4 Quesos",
+                    "Mozzarella, queso azul, queso ahumado y queso manchego": "Mozzarella, queso azul, queso ahumado y queso manchego",
+                    "Pizza Salmón": "Pizza Salmón",
+                    "Tomate, mozzarella y salmón ahumado": "Tomate, mozzarella y salmón ahumado",
+                    "Pizza Capresse": "Pizza Capresse",
+                    "Tomate, mozzarella, rodajas de tomate y salsa pesto": "Tomate, mozzarella, rodajas de tomate y salsa pesto",
+                    "Firma": "Firma",
+                    "Pizza Cala Agulla": "Pizza Cala Agulla",
+                    "Tomate, mozzarella, pimiento, cebolla, jamón york y gambas": "Tomate, mozzarella, pimiento, cebolla, jamón york y gambas",
+                    "Pizza Proscrito e Funghi": "Pizza Proscrito e Funghi",
+                    "Tomate, mozzarella, jamón york y champiñones": "Tomate, mozzarella, jamón york y champiñones",
+                    "Pizza Caprichosa": "Pizza Caprichosa",
+                    "Tomate, mozzarella, jamón york, champiñones, alcachofas y huevo": "Tomate, mozzarella, jamón york, champiñones, alcachofas y huevo",
+                    "Pizza Barbacoa": "Pizza Barbacoa",
+
+                    //Ensaladas
+                    "Ensaladas": "Ensaladas",
+                    "Gazpacho": "Gazpacho",
+                    "En temporada": "En temporada",
+                    "Tomate": "Tomate",
+                    "Tomate y cebolla": "Tomate y cebolla",
+                    "Verde": "Verde",
+                    "Mezcla de lechugas, maíz, tomate, cebolla, zanahoria y pimiento verde": "Mezcla de lechugas, maíz, tomate, cebolla, zanahoria y pimiento verde",
+                    "Atún": "Atún",
+                    "Mezcla de lechugas, tomate, cebolla, pimiento, zanahoria, maíz, aceitunas y atún": "Mezcla de lechugas, tomate, cebolla, pimiento, zanahoria, maíz, aceitunas y atún",
+                    "Caprese": "Caprese",
+                    "Tomate, mozzarella y albahaca": "Tomate, mozzarella y albahaca",
+                    "Clásica": "Clásica",
+                    "Cesar": "Cesar",
+                    "Tiras de pollo, escamas de parmesano, croutons, cebolla morada y salsa cesar": "Tiras de pollo, escamas de parmesano, croutons, cebolla morada y salsa cesar",
+                    "Pollo con frutas": "Pollo con frutas",
+                    "Mezcla de lechugas, tomate, cebolla, pollo, salsa rosa, nueces y manzana": "Mezcla de lechugas, tomate, cebolla, pollo, salsa rosa, nueces y manzana",
+                    "Salmón": "Salmón",
+                    "Mezcla de lechugas, tomate, zanahoria, salmón, tomate seco y vinagreta": "Mezcla de lechugas, tomate, zanahoria, salmón, tomate seco y vinagreta",
+                    "Gourmet": "Gourmet",
+                    "Tibia": "Tibia",
+                    "Mezcla de lechugas, nueces, tomate seco, zanahoria, pipas de calabaza, queso de cabra a la plancha y confitura de higos": "Mezcla de lechugas, nueces, tomate seco, zanahoria, pipas de calabaza, queso de cabra a la plancha y confitura de higos",
+                    "Piña Feta": "Piña Feta",
+                    "Avocado, piña, feta, bacon, cebolla frita, lechuga, salsa mostaza y naranja": "Avocado, piña, feta, bacon, cebolla frita, lechuga, salsa mostaza y naranja",
+                    "Especial": "Especial",
+                    "Ensalada Tropical": "Ensalada Tropical",
+                    "Mezcla de lechugas, aguacate, piña, naranja, manzana, tomate cherry, gambas y salsa rosa": "Mezcla de lechugas, aguacate, piña, naranja, manzana, tomate cherry, gambas y salsa rosa",
+
+                    //Salsas
+                    "Salsas": "Salsas",
+                    "Yogur": "Yogur",
+                    "Crema de yogur natural con especias": "Crema de yogur natural con especias",
+                    "Rosa": "Rosa",
+                    "Mezcla de mayonesa y ketchup": "Mezcla de mayonesa y ketchup",
+                    "Alioli": "Alioli",
+                    "Emulsión de ajo y aceite de oliva": "Emulsión de ajo y aceite de oliva",
+                    "Salsa César": "Salsa César",
+                    "Clásica salsa con anchoas y parmesano": "Clásica salsa con anchoas y parmesano",
+                    "Mostaza Miel": "Mostaza Miel",
+                    "Equilibrio perfecto entre dulce y picante": "Equilibrio perfecto entre dulce y picante",
+
+                    //Carnes
+                    "Carnes": "Carnes",
+                    "Pinchitos de Cerdo": "Pinchitos de Cerdo",
+                    "2 pinchos con patatas fritas y ensalada": "2 pinchos con patatas fritas y ensalada",
+                    "Brochetas de Pollo": "Brochetas de Pollo",
+                    "2 brochetas con patatas fritas y ensalada": "2 brochetas con patatas fritas y ensalada",
+                    "Escalope de Cerdo": "Escalope de Cerdo",
+                    "Con patatas fritas y ensalada": "Con patatas fritas y ensalada",
+                    "Pechuga de Pollo": "Pechuga de Pollo",
+                    "Recomendación": "Recomendación",
+                    "Cordon Blue de Cerdo Casero": "Cordon Blue de Cerdo Casero",
+
+                    //Pescado
+                    "Pescados": "Pescados",
+                    "Sardinas a la Plancha": "Sardinas a la Plancha",
+                    "4 sardinas con ensalada": "4 sardinas con ensalada",
+                    "Especialidad": "Especialidad",
+                    "Gambas al Ajillo": "Gambas al Ajillo",
+                    "Gambas frescas al ajillo con guindilla": "Gambas frescas al ajillo con guindilla",
+                    "Calamar a la Plancha": "Calamar a la Plancha",
+                    "Con patatas fritas y ensalada": "Con patatas fritas y ensalada",
+                    "Salmón a la Plancha": "Salmón a la Plancha",
+                    "Premium": "Premium",
+                    "Langostinos a la Plancha": "Langostinos a la Plancha",
+                    "Langostinos frescos con limón": "Langostinos frescos con limón",
+
+                    //Hamburguesas
+                    "Hamburguesas": "Hamburguesas",
+                    "Normal": "Normal",
+                    "Carne mixta de cerdo y ternera con tomate, cebolla y lechuga": "Carne mixta de cerdo y ternera con tomate, cebolla y lechuga",
+                    "Queso": "Queso",
+                    "Carne mixta con tomate, cebolla, lechuga y queso fundido": "Carne mixta con tomate, cebolla, lechuga y queso fundido",
+                    "Bacon y Queso": "Bacon y Queso",
+                    "Carne mixta con tomate, cebolla, lechuga, bacon crujiente y queso": "Carne mixta con tomate, cebolla, lechuga, bacon crujiente y queso",
+                    "Pollo": "Pollo",
+                    "Pechuga de pollo con tomate, cebolla y lechuga": "Pechuga de pollo con tomate, cebolla y lechuga",
+                    "Pollo con Queso": "Pollo con Queso",
+                    "Pechuga de pollo con tomate, cebolla, lechuga y queso fundido": "Pechuga de pollo con tomate, cebolla, lechuga y queso fundido",
+                    "XXL": "XXL",
+                    "XXL Burger": "XXL Burger",
+                    "Carne de ternera con tomate, cebolla, lechuga, bacon, huevo, queso y patatas fritas": "Carne de ternera con tomate, cebolla, lechuga, bacon, huevo, queso y patatas fritas",
+                    "Especialidad": "Especialidad",
+                    "Big Burger Cala Agulla": "Big Burger Cala Agulla",
+                    "200gr de vacuno con tomate, cebolla, lechuga, bacon, queso, huevo y patatas fritas": "200gr de vacuno con tomate, cebolla, lechuga, bacon, queso, huevo y patatas fritas",
+
+                    //Patatas
+                    "Patatas": "Patatas",
+                    "Pequeñas": "Pequeñas",
+                    "Grandes": "Grandes",
+
+                    //Salchichas
+                    "Salchichas": "Salchichas",
+                    "Hot Dog": "Hot Dog",
+                    "Recomendado": "Recomendado",
+                    "Hot Dog Especial": "Hot Dog Especial",
+                    "Con bacon crujiente, cebolla seca y queso fundido": "Con bacon crujiente, cebolla seca y queso fundido",
+                    "Hot Dog con Patatas Fritas": "Hot Dog con Patatas Fritas",
+
+                    //niños
+                    "Para Niños": "Para Niños",
+                    "Popular": "Popular",
+                    "½ Ración Spaghetti Bolognesa": "½ Ración Spaghetti Bolognesa",
+                    "Nuggets con Patatas Fritas": "Nuggets con Patatas Fritas",
+                    "Escalope con Patatas Fritas": "Escalope con Patatas Fritas",
+
+                    // Bebidas
+                    "Refrescos": "Refrescos",
+                    "Cervezas": "Cervezas",
+                    "Cafés": "Cafés",
+                    "Vinos": "Vinos",
+                    "Cavas": "Cavas",
+                    "Cócteles": "Cócteles",
+                    "Cócteles sin alcohol": "Cócteles sin alcohol",
+                    "Premium": "Premium",
+
+                    // Footer
+                    "Todos los derechos reservados.": "Todos los derechos reservados.",
+                    "Diseño innovador por": "Diseño innovador por"
+                },
+                en: {
+                    // Header y navegación
+                    "Gastronomía mediterránea frente al mar": "Mediterranean gastronomy by the sea",
+                    "Comida": "Food",
+                    "Postres": "Desserts",
+                    "Bebidas": "Drinks",
+                    "Alergias": "Allergies",
+                    "Horario": "Schedule",
+
+                    // Secciones
+                    "Bocadillos": "Traditional Spanish Baguettes",
+                    "Sandwiches": "Club Sandwiches",
+                    "Tapas": "Tapas",
+                    "Pasta": "Pasta",
+                    "Pizzas": "Pizzas",
+                    "Ensaladas": "Salads",
+                    "Salsas": "Sauces",
+                    "Carnes": "Meats",
+                    "Pescados": "Fish",
+                    "Hamburguesas": "Burgers",
+                    "Patatas": "Potatoes",
+                    "Salchichas": "Hot Dogs",
+                    "Para Niños": "Kids Menu",
+
+                    /* Productos */
+                    // Bocadillos products
+                    "Jamón York": "Ham",
+                    "Jamón York y Queso": "Ham and Cheese",
+                    "Queso": "Cheese",
+                    "Jamón Serrano": "Cured Ham",
+                    "Jamón Serrano y Queso": "Cured Ham and Cheese",
+                    "Salami": "Salami",
+                    "Salami y Queso": "Salami and Cheese",
+                    "Bacon": "Bacon",
+                    "Bacon y Queso": "Bacon and Cheese",
+                    "Lomo": "Pork Loin",
+                    "Lomo y Queso": "Pork Loin and Cheese",
+                    "Tortilla Francesa": "Omelette",
+                    "Atún": "Tuna",
+                    "Atún y Queso": "Tuna and Cheese",
+                    "Pollo": "Chicken",
+                    "Pollo y Queso": "Chicken and Cheese",
+                    "Chiringuito": "House Special",
+                    "Lomo, queso, bacon, lechuga y tomate": "Pork loin, cheese, bacon, lettuce and tomato",
+
+                    //Sandwiches
+                    // Section
+                    "Sandwiches": "Sandwiches",
+
+                    // Products
+                    "Mixto": "Mixed Sandwich",
+                    "Jamón york, queso y tomate": "York ham, cheese and tomato",
+
+                    "Hawaii": "Hawaiian Sandwich",
+                    "Jamón york, queso, tomate y piña": "York ham, cheese, tomato and pineapple",
+
+                    "Recomendación": "Chef's Recommendation",
+                    "Club": "Club Sandwich",
+                    "Tres pisos de pan con jamón york, queso, tomate, lechuga, pollo, huevo, bacon y salsa rosa":
+                        "Three layers of bread with York ham, cheese, tomato, lettuce, chicken, egg, bacon and pink sauce",
+
+                    "Vegetal": "Vegetarian Sandwich",
+                    "Lechuga, tomate, cebolla, huevo, salsa rosa":
+                        "Lettuce, tomato, onion, egg and pink sauce",
+
+                    "Especial Atún": "Tuna Special",
+                    "Tres pisos de pan con queso, cebolla morada, tomate, lechuga, atún, huevo y salsa rosa":
+                        "Three layers of bread with cheese, red onion, tomato, lettuce, tuna, egg and pink sauce",
+
+                    "Especial Salmón": "Salmon Special",
+                    "Tres pisos de pan con lechuga, tomate, salmón, huevo y salsa de mostaza con miel":
+                        "Three layers of bread with lettuce, tomato, salmon, egg and honey mustard sauce",
+
+                    //Tapas
+                    "Tapas": "Spanish Tapas",
+                    "Alioli con pan y aceitunas": "Garlic alioli with bread and olives",
+                    "Pan de pizza alioli y aceitunas": "Pizza bread with alioli and olives",
+                    "Plato jamón de cebo ibérico": "Iberian acorn-fed ham platter",
+                    "Tabla de quesos": "Cheese board",
+                    "Plato de jamón serrano y queso": "Serrano ham and cheese platter",
+                    "Pimientos de padrón": "Padrón peppers",
+                    "Dátiles con bacon": "Bacon-wrapped dates",
+                    "Puntillas de calamar": "Baby squid (fried)",
+                    "Rabas de calamar": "Squid rings (fried)",
+                    "Papas bravas": "Spicy potatoes with brava sauce",
+                    "Papas con alioli": "Potatoes with garlic alioli",
+                    "Papas gratinadas con queso y bacon": "Potatoes au gratin with cheese and bacon",
+                    "Nachos con queso": "Nachos with cheese",
+                    "Nachos con pollo y queso": "Nachos with chicken and cheese",
+                    "Boquerones (fritos)": "Anchovies (fried)",
+                    "Mejillones (a la marinera)": "Mussels (in white wine sauce)",
+                    "Surtido": "Assortment",
+                    "Surtido de tapas": "Tapas selection",
+                    "Pimientos del padrón, dátiles con bacon, boquerones y rabas de calamar": "Padrón peppers, bacon-wrapped dates, fried anchovies and squid rings",
+                    "Fingers de pollo con chutney": "Chicken fingers with chutney",
+                    "Aceitunas": "Olives",
+                    "Pan": "Bread",
+                    "Alitas de pollo (con salsa barbacoa)": "Chicken wings (with BBQ sauce)",
+
+                    //Pasta
+                    "Pasta": "Pasta",
+                    "Espaguetti Napolitana": "Spaghetti Napoletana",
+                    "Con salsa de tomate": "With tomato sauce",
+                    "Espaguetti Boloñesa": "Spaghetti Bolognese",
+                    "Carne de cerdo, cebolla, zanahoria, pimiento rojo y verde": "Pork meat, onion, carrot, red and green bell pepper",
+                    "Espaguetti Vegetal": "Vegetable Spaghetti",
+                    "Verduras de temporada con nueces, tomate": "Seasonal vegetables with walnuts, tomato",
+                    "Espaguetti con ajo y aceite": "Spaghetti with garlic and oil",
+                    "Tallarines al pesto": "Tagliatelle with pesto",
+                    "Especialidad": "Specialty",
+                    "Tallarines con gambas": "Tagliatelle with prawns",
+                    "Gambas frescas con ajo, perejil y un toque de limón": "Fresh prawns with garlic, parsley and a hint of lemon",
+
+                    //Pizza
+                    "Pizzas": "Pizzas",
+                    "Pizza Margarita": "Margherita Pizza",
+                    "Tomate, mozzarella y orégano": "Tomato, mozzarella and oregano",
+                    "Pizza Salami": "Salami Pizza",
+                    "Tomate, mozzarella y salami": "Tomato, mozzarella and salami",
+                    "Pizza Prosciutto": "Ham Pizza",
+                    "Tomate, mozzarella y jamón york": "Tomato, mozzarella and cooked ham",
+                    "Pizza Hawaii": "Hawaiian Pizza",
+                    "Tomate, mozzarella, jamón york y piña": "Tomato, mozzarella, cooked ham and pineapple",
+                    "Pizza Diabolo": "Spicy Salami Pizza",
+                    "Tomate, mozzarella, salami y picante": "Tomato, mozzarella, spicy salami",
+                    "Pizza Bacon": "Bacon Pizza",
+                    "Tomate, mozzarella, bacon y cebolla": "Tomato, mozzarella, bacon and onion",
+                    "Pizza Tono": "Tuna Pizza",
+                    "Tomate, mozzarella, atún y cebolla": "Tomato, mozzarella, tuna and onion",
+                    "Especialidad": "Specialty",
+                    "Pizza de la Casa": "House Special Pizza",
+                    "Tomate, mozzarella, jamón serrano, queso semicurado y uva": "Tomato, mozzarella, serrano ham, semi-cured cheese and grapes",
+                    "Pizza 4 Quesos": "Four Cheese Pizza",
+                    "Mozzarella, queso azul, queso ahumado y queso manchego": "Mozzarella, blue cheese, smoked cheese and manchego cheese",
+                    "Pizza Salmón": "Smoked Salmon Pizza",
+                    "Tomate, mozzarella y salmón ahumado": "Tomato, mozzarella and smoked salmon",
+                    "Pizza Capresse": "Caprese Pizza",
+                    "Tomate, mozzarella, rodajas de tomate y salsa pesto": "Tomato, mozzarella, tomato slices and pesto sauce",
+                    "Firma": "Signature",
+                    "Pizza Cala Agulla": "Cala Agulla Pizza",
+                    "Tomate, mozzarella, pimiento, cebolla, jamón york y gambas": "Tomato, mozzarella, bell pepper, onion, cooked ham and prawns",
+                    "Pizza Proscrito e Funghi": "Ham and Mushroom Pizza",
+                    "Tomate, mozzarella, jamón york y champiñones": "Tomato, mozzarella, cooked ham and mushrooms",
+                    "Pizza Caprichosa": "Capricciosa Pizza",
+                    "Tomate, mozzarella, jamón york, champiñones, alcachofas y huevo": "Tomato, mozzarella, cooked ham, mushrooms, artichokes and egg",
+                    "Pizza Barbacoa": "BBQ Pizza",
+
+                    //Ensaladas
+                    "Ensaladas": "Salads",
+                    "Gazpacho": "Gazpacho",
+                    "En temporada": "Seasonal",
+                    "Tomate": "Tomato Salad",
+                    "Tomate y cebolla": "Tomato and onion",
+                    "Verde": "Green Salad",
+                    "Mezcla de lechugas, maíz, tomate, cebolla, zanahoria y pimiento verde": "Mixed lettuce, corn, tomato, onion, carrot and green pepper",
+                    "Atún": "Tuna Salad",
+                    "Mezcla de lechugas, tomate, cebolla, pimiento, zanahoria, maíz, aceitunas y atún": "Mixed lettuce, tomato, onion, pepper, carrot, corn, olives and tuna",
+                    "Caprese": "Caprese Salad",
+                    "Tomate, mozzarella y albahaca": "Tomato, mozzarella and basil",
+                    "Clásica": "Classic",
+                    "Cesar": "Caesar",
+                    "Tiras de pollo, escamas de parmesano, croutons, cebolla morada y salsa cesar": "Chicken strips, parmesan flakes, croutons, red onion and Caesar dressing",
+                    "Pollo con frutas": "Chicken with Fruits Salad",
+                    "Mezcla de lechugas, tomate, cebolla, pollo, salsa rosa, nueces y manzana": "Mixed lettuce, tomato, onion, chicken, pink sauce, walnuts and apple",
+                    "Salmón": "Salmon Salad",
+                    "Mezcla de lechugas, tomate, zanahoria, salmón, tomate seco y vinagreta": "Mixed lettuce, tomato, carrot, salmon, sun-dried tomato and vinaigrette",
+                    "Gourmet": "Gourmet",
+                    "Tibia": "Warm Salad",
+                    "Mezcla de lechugas, nueces, tomate seco, zanahoria, pipas de calabaza, queso de cabra a la plancha y confitura de higos": "Mixed lettuce, walnuts, sun-dried tomato, carrot, pumpkin seeds, grilled goat cheese and fig jam",
+                    "Piña Feta": "Pineapple Feta Salad",
+                    "Avocado, piña, feta, bacon, cebolla frita, lechuga, salsa mostaza y naranja": "Avocado, pineapple, feta, bacon, fried onion, lettuce, mustard dressing and orange",
+                    "Especial": "Special",
+                    "Ensalada Tropical": "Tropical Salad",
+                    "Mezcla de lechugas, aguacate, piña, naranja, manzana, tomate cherry, gambas y salsa rosa": "Mixed lettuce, avocado, pineapple, orange, apple, cherry tomato, prawns and pink sauce",
+
+                    //Salsas
+                    "Salsas": "Sauces",
+                    "Yogur": "Yogurt Sauce",
+                    "Crema de yogur natural con especias": "Natural yogurt cream with spices",
+                    "Rosa": "Pink Sauce",
+                    "Mezcla de mayonesa y ketchup": "Mayonnaise and ketchup mix",
+                    "Alioli": "Garlic Aioli",
+                    "Emulsión de ajo y aceite de oliva": "Garlic and olive oil emulsion",
+                    "Salsa César": "Caesar Dressing",
+                    "Clásica salsa con anchoas y parmesano": "Classic dressing with anchovies and parmesan",
+                    "Mostaza Miel": "Honey Mustard",
+                    "Equilibrio perfecto entre dulce y picante": "Perfect balance between sweet and spicy",
+
+                    //Carnes
+                    "Carnes": "Meat Dishes",
+                    "Pinchitos de Cerdo": "Pork Skewers",
+                    "2 pinchos con patatas fritas y ensalada": "2 skewers with fries and salad",
+                    "Brochetas de Pollo": "Chicken Skewers",
+                    "2 brochetas con patatas fritas y ensalada": "2 skewers with fries and salad",
+                    "Escalope de Cerdo": "Pork Schnitzel",
+                    "Con patatas fritas y ensalada": "With fries and salad",
+                    "Pechuga de Pollo": "Chicken Breast",
+                    "Recomendación": "Chef's Recommendation",
+                    "Cordon Blue de Cerdo Casero": "Homemade Pork Cordon Bleu",
+
+                    //Pescado
+                    "Pescados": "Fish & Seafood",
+                    "Sardinas a la Plancha": "Grilled Sardines",
+                    "4 sardinas con ensalada": "4 sardines with salad",
+                    "Especialidad": "Specialty",
+                    "Gambas al Ajillo": "Garlic Shrimp",
+                    "Gambas frescas al ajillo con guindilla": "Fresh shrimp with garlic and chili",
+                    "Calamar a la Plancha": "Grilled Squid",
+                    "Con patatas fritas y ensalada": "With fries and salad",
+                    "Salmón a la Plancha": "Grilled Salmon",
+                    "Premium": "Premium",
+                    "Langostinos a la Plancha": "Grilled King Prawns",
+                    "Langostinos frescos con limón": "Fresh king prawns with lemon",
+
+                    //Hamburguesas
+                    "Hamburguesas": "Burgers",
+                    "Normal": "Classic",
+                    "Carne mixta de cerdo y ternera con tomate, cebolla y lechuga": "Mixed pork and beef patty with tomato, onion and lettuce",
+                    "Queso": "Cheese",
+                    "Carne mixta con tomate, cebolla, lechuga y queso fundido": "Mixed meat with tomato, onion, lettuce and melted cheese",
+                    "Bacon y Queso": "Bacon Cheese",
+                    "Carne mixta con tomate, cebolla, lechuga, bacon crujiente y queso": "Mixed meat with tomato, onion, lettuce, crispy bacon and cheese",
+                    "Pollo": "Chicken",
+                    "Pechuga de pollo con tomate, cebolla y lechuga": "Chicken breast with tomato, onion and lettuce",
+                    "Pollo con Queso": "Chicken Cheese",
+                    "Pechuga de pollo con tomate, cebolla, lechuga y queso fundido": "Chicken breast with tomato, onion, lettuce and melted cheese",
+                    "XXL": "XXL",
+                    "XXL Burger": "XXL Burger",
+                    "Carne de ternera con tomate, cebolla, lechuga, bacon, huevo, queso y patatas fritas": "Beef patty with tomato, onion, lettuce, bacon, egg, cheese and fries",
+                    "Especialidad": "Specialty",
+                    "Big Burger Cala Agulla": "Cala Agulla Big Burger",
+                    "200gr de vacuno con tomate, cebolla, lechuga, bacon, queso, huevo y patatas fritas": "200g beef patty with tomato, onion, lettuce, bacon, cheese, egg and fries",
+
+                    //Patatas
+                    "Patatas": "Potatoes",
+                    "Pequeñas": "Small",
+                    "Grandes": "Big",
+
+                    //Salchichas
+                    "Salchichas": "Hot Dogs",
+                    "Hot Dog": "Classic Hot Dog",
+                    "Recomendado": "Recommended",
+                    "Hot Dog Especial": "Special Hot Dog",
+                    "Con bacon crujiente, cebolla seca y queso fundido": "With crispy bacon, fried onions and melted cheese",
+                    "Hot Dog con Patatas Fritas": "Hot Dog with Fries",
+
+                    //Niños
+                    "Para Niños": "Kids Menu",
+                    "Popular": "Popular",
+                    "½ Ración Spaghetti Bolognesa": "½ Portion Spaghetti Bolognese",
+                    "Nuggets con Patatas Fritas": "Chicken Nuggets with Fries",
+                    "Escalope con Patatas Fritas": "Breaded Cutlet with Fries",
+
+                    // Bebidas
+                    "Refrescos": "Soft Drinks",
+                    "Cervezas": "Beers",
+                    "Cafés": "Coffees",
+                    "Vinos": "Wines",
+                    "Cavas": "Sparkling Wines",
+                    "Cócteles": "Cocktails",
+                    "Cócteles sin alcohol": "Non-alcoholic Cocktails",
+                    "Premium": "Premium",
+
+                    // Footer
+                    "Todos los derechos reservados.": "All rights reserved.",
+                    "Diseño innovador por": "Innovative design by"
+                },
+                de: {
+                    // Header y navegación (mejoradas)
+                    "Gastronomía mediterránea frente al mar": "Mittelmeerküste mit Meerblick",
+                    "Comida": "Speisen",
+                    "Postres": "Nachspeisen",
+                    "Bebidas": "Getränke",
+                    "Alergias": "Allergene",
+                    "Horario": "Öffnungszeiten",
+
+                    // Secciones (optimizadas)
+                    "Bocadillos": "Belegte Baguettes", // Más preciso para bocadillos españoles
+                    "Sandwiches": "Sandwiches", // Se mantiene para sandwiches internacionales
+                    "Tapas": "Tapas", // Correcto (se usa en alemán)
+                    "Pasta": "Pasta",
+                    "Pizzas": "Pizzas",
+                    "Ensaladas": "Salate",
+                    "Salsas": "Soßen",
+                    "Carnes": "Fleischgerichte", // Más específico
+                    "Pescados": "Fischgerichte", // Más específico
+                    "Hamburguesas": "Hamburger",
+                    "Patatas": "Kartoffelspezialitäten", // Más apetitoso
+                    "Salchichas": "Würstchen", // Más genérico que "Hot Dogs"
+                    "Para Niños": "Kindergerichte", // Más natural
+
+                    // Productos Bocadillos (completos y corregidos)
+                    "Jamón York": "Kochschinken",
+                    "Jamón York y Queso": "Kochschinken mit Käse",
+                    "Queso": "Käse",
+                    "Jamón Serrano": "Serrano-Schinken",
+                    "Jamón Serrano y Queso": "Serrano-Schinken mit Käse",
+                    "Salami": "Salami",
+                    "Salami y Queso": "Salami mit Käse",
+                    "Bacon": "Speck",
+                    "Bacon y Queso": "Speck mit Käse",
+                    "Lomo": "Schweinefilet", // Más común que "Schweinelende"
+                    "Lomo y Queso": "Schweinefilet mit Käse",
+                    "Tortilla Francesa": "Omelett",
+                    "Atún": "Thunfisch",
+                    "Atún y Queso": "Thunfisch mit Käse",
+                    "Pollo": "Hähnchen",
+                    "Pollo y Queso": "Hähnchen mit Käse",
+                    "Chiringuito": "Hausspezialität", // Corrección ortográfica
+                    "Lomo, queso, bacon, lechuga y tomate": "Schweinefilet, Käse, Speck, Salat und Tomate",
+
+                    // Términos culinarios adicionales
+                    "Especialidad de la casa": "Hausspezialität",
+                    "Recomendación": "Empfehlung",
+                    "Surtido": "Auswahl",
+
+                    //Sandwiches
+                    // Sección
+                    "Sandwiches": "Sandwiches",
+                    "Mixto": "Gemischtes Sandwich",
+                    "Jamón york, queso y tomate": "Kochschinken, Käse und Tomate",
+
+                    "Hawaii": "Hawaii Sandwich",
+                    "Jamón york, queso, tomate y piña": "Kochschinken, Käse, Tomate und Ananas",
+
+                    "Recomendación": "Empfehlung",
+                    "Club": "Club Sandwich",
+                    "Tres pisos de pan con jamón york, queso, tomate, lechuga, pollo, huevo, bacon y salsa rosa":
+                        "Dreistöckiges Sandwich mit Kochschinken, Käse, Tomate, Salat, Hähnchen, Ei, Speck und Cocktailsauce",
+
+                    "Vegetal": "Vegetarisches Sandwich",
+                    "Lechuga, tomate, cebolla, huevo, salsa rosa":
+                        "Salat, Tomate, Zwiebeln, Ei und Cocktailsauce",
+
+                    "Especial Atún": "Thunfisch-Spezial",
+                    "Tres pisos de pan con queso, cebolla morada, tomate, lechuga, atún, huevo y salsa rosa":
+                        "Dreistöckiges Sandwich mit Käse, roten Zwiebeln, Tomate, Salat, Thunfisch, Ei und Cocktailsauce",
+
+                    "Especial Salmón": "Lachs-Spezial",
+                    "Tres pisos de pan con lechuga, tomate, salmón, huevo y salsa de mostaza con miel":
+                        "Dreistöckiges Sandwich mit Salat, Tomate, Lachs, Ei und Honig-Senf-Sauce",
+
+                    //Tapas
+                    "Tapas": "Tapas",
+                    "Alioli con pan y aceitunas": "Knoblauch-Mayonnaise mit Brot und Oliven",
+                    "Pan de pizza alioli y aceitunas": "Pizzabrot mit Knoblauch-Mayonnaise und Oliven",
+                    "Plato jamón de cebo ibérico": "Iberischer Eichelschinken Teller",
+                    "Tabla de quesos": "Käseplatte",
+                    "Plato de jamón serrano y queso": "Serrano-Schinken mit Käse",
+                    "Pimientos de padrón": "Padrón-Paprikaschoten",
+                    "Dátiles con bacon": "Datteln im Speckmantel",
+                    "Puntillas de calamar": "Baby-Tintenfisch (frittiert)",
+                    "Rabas de calamar": "Tintenfischringe (frittiert)",
+                    "Papas bravas": "Scharfe Kartoffeln mit Brava-Soße",
+                    "Papas con alioli": "Kartoffeln mit Knoblauch-Mayonnaise",
+                    "Papas gratinadas con queso y bacon": "Überbackene Kartoffeln mit Käse und Speck",
+                    "Nachos con queso": "Nachos mit Käse",
+                    "Nachos con pollo y queso": "Nachos mit Hähnchen und Käse",
+                    "Boquerones (fritos)": "Sardellen (frittiert)",
+                    "Mejillones (a la marinera)": "Miesmuscheln (in Weißweinsauce)",
+                    "Surtido": "Auswahl",
+                    "Surtido de tapas": "Tapas-Auswahl",
+                    "Pimientos del padrón, dátiles con bacon, boquerones y rabas de calamar": "Padrón-Paprikaschoten, Datteln im Speckmantel, frittierte Sardellen und Tintenfischringe",
+                    "Fingers de pollo con chutney": "Hähnchenstreifen mit Chutney",
+                    "Aceitunas": "Oliven",
+                    "Pan": "Brot",
+                    "Alitas de pollo (con salsa barbacoa)": "Hähnchenflügel (mit BBQ-Soße)",
+
+                    //Pasta
+                    "Pasta": "Pasta",
+                    "Espaguetti Napolitana": "Spaghetti Napoli",
+                    "Con salsa de tomate": "Mit Tomatensauce",
+                    "Espaguetti Boloñesa": "Spaghetti Bolognese",
+                    "Carne de cerdo, cebolla, zanahoria, pimiento rojo y verde": "Schweinefleisch, Zwiebeln, Karotten, rote und grüne Paprika",
+                    "Espaguetti Vegetal": "Gemüse-Spaghetti",
+                    "Verduras de temporada con nueces, tomate": "Saisongemüse mit Walnüssen, Tomate",
+                    "Espaguetti con ajo y aceite": "Spaghetti mit Knoblauch und Öl",
+                    "Tallarines al pesto": "Tagliatelle mit Pesto",
+                    "Especialidad": "Spezialität",
+                    "Tallarines con gambas": "Tagliatelle mit Garnelen",
+                    "Gambas frescas con ajo, perejil y un toque de limón": "Frische Garnelen mit Knoblauch, Petersilie und einer Zitronennote",
+
+                    //Pizza
+                    "Pizzas": "Pizzas",
+                    "Pizza Margarita": "Pizza Margherita",
+                    "Tomate, mozzarella y orégano": "Tomate, Mozzarella und Oregano",
+                    "Pizza Salami": "Pizza Salami",
+                    "Tomate, mozzarella y salami": "Tomate, Mozzarella und Salami",
+                    "Pizza Prosciutto": "Pizza Schinken",
+                    "Tomate, mozzarella y jamón york": "Tomate, Mozzarella und Kochschinken",
+                    "Pizza Hawaii": "Pizza Hawaii",
+                    "Tomate, mozzarella, jamón york y piña": "Tomate, Mozzarella, Kochschinken und Ananas",
+                    "Pizza Diabolo": "Scharfe Salami Pizza",
+                    "Tomate, mozzarella, salami y picante": "Tomate, Mozzarella und scharfe Salami",
+                    "Pizza Bacon": "Pizza Speck",
+                    "Tomate, mozzarella, bacon y cebolla": "Tomate, Mozzarella, Speck und Zwiebeln",
+                    "Pizza Tono": "Thunfisch Pizza",
+                    "Tomate, mozzarella, atún y cebolla": "Tomate, Mozzarella, Thunfisch und Zwiebeln",
+                    "Especialidad": "Spezialität",
+                    "Pizza de la Casa": "Haus-Pizza",
+                    "Tomate, mozzarella, jamón serrano, queso semicurado y uva": "Tomate, Mozzarella, Serrano-Schinken, halbgereifter Käse und Trauben",
+                    "Pizza 4 Quesos": "Vier-Käse-Pizza",
+                    "Mozzarella, queso azul, queso ahumado y queso manchego": "Mozzarella, Blauschimmelkäse, Räucherkäse und Manchego-Käse",
+                    "Pizza Salmón": "Lachs Pizza",
+                    "Tomate, mozzarella y salmón ahumado": "Tomate, Mozzarella und Räucherlachs",
+                    "Pizza Capresse": "Caprese Pizza",
+                    "Tomate, mozzarella, rodajas de tomate y salsa pesto": "Tomate, Mozzarella, Tomatenscheiben und Pesto",
+                    "Firma": "Hauskreation",
+                    "Pizza Cala Agulla": "Cala Agulla Pizza",
+                    "Tomate, mozzarella, pimiento, cebolla, jamón york y gambas": "Tomate, Mozzarella, Paprika, Zwiebeln, Kochschinken und Garnelen",
+                    "Pizza Proscrito e Funghi": "Pizza Schinken-Pilze",
+                    "Tomate, mozzarella, jamón york y champiñones": "Tomate, Mozzarella, Kochschinken und Champignons",
+                    "Pizza Caprichosa": "Pizza Capricciosa",
+                    "Tomate, mozzarella, jamón york, champiñones, alcachofas y huevo": "Tomate, Mozzarella, Kochschinken, Champignons, Artischocken und Ei",
+                    "Pizza Barbacoa": "BBQ Pizza",
+
+                    //Ensaladas
+                    "Ensaladas": "Salate",
+                    "Gazpacho": "Gazpacho",
+                    "En temporada": "Saisonal",
+                    "Tomate": "Tomaten Salat",
+                    "Tomate y cebolla": "Tomate und Zwiebel",
+                    "Verde": "Grüner Salat",
+                    "Mezcla de lechugas, maíz, tomate, cebolla, zanahoria y pimiento verde": "Gemischter Salat, Mais, Tomate, Zwiebel, Karotte und grüne Paprika",
+                    "Atún": "Thunfisch Salat",
+                    "Mezcla de lechugas, tomate, cebolla, pimiento, zanahoria, maíz, aceitunas y atún": "Gemischter Salat, Tomate, Zwiebel, Paprika, Karotte, Mais, Oliven und Thunfisch",
+                    "Caprese": "Caprese Salat",
+                    "Tomate, mozzarella y albahaca": "Tomate, Mozzarella und Basilikum",
+                    "Clásica": "Klassiker",
+                    "Cesar": "Cäsar",
+                    "Tiras de pollo, escamas de parmesano, croutons, cebolla morada y salsa cesar": "Hähnchenstreifen, Parmesanflocken, Croutons, rote Zwiebel und Cäsar-Dressing",
+                    "Pollo con frutas": "Hähnchen mit Früchten Salat",
+                    "Mezcla de lechugas, tomate, cebolla, pollo, salsa rosa, nueces y manzana": "Gemischter Salat, Tomate, Zwiebel, Hähnchen, Rosa-Sauce, Walnüsse und Apfel",
+                    "Salmón": "Lachs Salat",
+                    "Mezcla de lechugas, tomate, zanahoria, salmón, tomate seco y vinagreta": "Gemischter Salat, Tomate, Karotte, Lachs, getrocknete Tomate und Vinaigrette",
+                    "Gourmet": "Gourmet",
+                    "Tibia": "Warmer Salat",
+                    "Mezcla de lechugas, nueces, tomate seco, zanahoria, pipas de calabaza, queso de cabra a la plancha y confitura de higos": "Gemischter Salat, Walnüsse, getrocknete Tomate, Karotte, Kürbiskerne, gegrillter Ziegenkäse und Feigenmarmelade",
+                    "Piña Feta": "Ananas-Feta Salat",
+                    "Avocado, piña, feta, bacon, cebolla frita, lechuga, salsa mostaza y naranja": "Avocado, Ananas, Feta, Speck, gebratene Zwiebel, Salat, Senf-Dressing und Orange",
+                    "Especial": "Spezial",
+                    "Ensalada Tropical": "Tropischer Salat",
+                    "Mezcla de lechugas, aguacate, piña, naranja, manzana, tomate cherry, gambas y salsa rosa": "Gemischter Salat, Avocado, Ananas, Orange, Apfel, Cherrytomaten, Garnelen und Rosa-Sauce",
+
+                    //Salsas
+                    "Salsas": "Soßen",
+                    "Yogur": "Joghurt-Soße",
+                    "Crema de yogur natural con especias": "Natürliche Joghurtcreme mit Gewürzen",
+                    "Rosa": "Rosa Soße",
+                    "Mezcla de mayonesa y ketchup": "Mayonnaise und Ketchup Mischung",
+                    "Alioli": "Knoblauch-Mayonnaise",
+                    "Emulsión de ajo y aceite de oliva": "Knoblauch und Olivenöl Emulsion",
+                    "Salsa César": "Cäsar-Dressing",
+                    "Clásica salsa con anchoas y parmesano": "Klassisches Dressing mit Sardellen und Parmesan",
+                    "Mostaza Miel": "Honig-Senf",
+                    "Equilibrio perfecto entre dulce y picante": "Perfekte Balance zwischen süß und würzig",
+
+                    //Carnes
+                    "Carnes": "Fleischgerichte",
+                    "Pinchitos de Cerdo": "Schweinespieße",
+                    "2 pinchos con patatas fritas y ensalada": "2 Spieße mit Pommes und Salat",
+                    "Brochetas de Pollo": "Hähnchenspieße",
+                    "2 brochetas con patatas fritas y ensalada": "2 Spieße mit Pommes und Salat",
+                    "Escalope de Cerdo": "Schweineschnitzel",
+                    "Con patatas fritas y ensalada": "Mit Pommes und Salat",
+                    "Pechuga de Pollo": "Hähnchenbrust",
+                    "Recomendación": "Empfehlung des Hauses",
+                    "Cordon Blue de Cerdo Casero": "Hausgemachtes Schweine-Cordon-Bleu",
+
+                    //Pescado
+                    "Pescados": "Fisch & Meeresfrüchte",
+                    "Sardinas a la Plancha": "Gegrillte Sardinen",
+                    "4 sardinas con ensalada": "4 Sardinen mit Salat",
+                    "Especialidad": "Spezialität",
+                    "Gambas al Ajillo": "Gambas al Ajillo",
+                    "Gambas frescas al ajillo con guindilla": "Frische Garnelen mit Knoblauch und Chili",
+                    "Calamar a la Plancha": "Gegrillter Tintenfisch",
+                    "Con patatas fritas y ensalada": "Mit Pommes und Salat",
+                    "Salmón a la Plancha": "Gegrillter Lachs",
+                    "Premium": "Premium",
+                    "Langostinos a la Plancha": "Gegrillte Riesengarnelen",
+                    "Langostinos frescos con limón": "Frische Riesengarnelen mit Zitrone",
+
+                    //Hamburguesas
+                    "Hamburguesas": "Burger",
+                    "Normal": "Klassiker",
+                    "Carne mixta de cerdo y ternera con tomate, cebolla y lechuga": "Gemischtes Schweine-Rind-Hack mit Tomate, Zwiebeln und Salat",
+                    "Queso": "Käse",
+                    "Carne mixta con tomate, cebolla, lechuga y queso fundido": "Gemischtes Hackfleisch mit Tomate, Zwiebeln, Salat und geschmolzenem Käse",
+                    "Bacon y Queso": "Bacon-Käse",
+                    "Carne mixta con tomate, cebolla, lechuga, bacon crujiente y queso": "Gemischtes Hackfleisch mit Tomate, Zwiebeln, Salat, knusprigem Bacon und Käse",
+                    "Pollo": "Hähnchen",
+                    "Pechuga de pollo con tomate, cebolla y lechuga": "Hähnchenbrust mit Tomate, Zwiebeln und Salat",
+                    "Pollo con Queso": "Hähnchen-Käse",
+                    "Pechuga de pollo con tomate, cebolla, lechuga y queso fundido": "Hähnchenbrust mit Tomate, Zwiebeln, Salat und geschmolzenem Käse",
+                    "XXL": "XXL",
+                    "XXL Burger": "XXL Burger",
+                    "Carne de ternera con tomate, cebolla, lechuga, bacon, huevo, queso y patatas fritas": "Rinderhack mit Tomate, Zwiebeln, Salat, Bacon, Ei, Käse und Pommes",
+                    "Especialidad": "Spezialität",
+                    "Big Burger Cala Agulla": "Cala Agulla Big Burger",
+                    "200gr de vacuno con tomate, cebolla, lechuga, bacon, queso, huevo y patatas fritas": "200g Rinderhack mit Tomate, Zwiebeln, Salat, Bacon, Käse, Ei und Pommes",
+
+                    //Patatas
+                    "Patatas": "Kartoffeln",
+                    "Pequeñas": "Klein",
+                    "Grandes": "Groß",
+
+                    //salchichas
+                    "Salchichas": "Hot Dogs",
+                    "Hot Dog": "Hot Dog",
+                    "Recomendado": "Empfohlen",
+                    "Hot Dog Especial": "Special Hot Dog",
+                    "Con bacon crujiente, cebolla seca y queso fundido": "Mit knusprigem Speck, gebratenen Zwiebeln und geschmolzenem Käse",
+                    "Hot Dog con Patatas Fritas": "Hot Dog mit Pommes",
+
+                    //Niños
+                    "Para Niños": "Kindermenü",
+                    "Popular": "Beliebt",
+                    "½ Ración Spaghetti Bolognesa": "½ Portion Spaghetti Bolognese",
+                    "Nuggets con Patatas Fritas": "Hähnchennuggets mit Pommes",
+                    "Escalope con Patatas Fritas": "Schnitzel mit Pommes",
+                    
+                    // Bebidas
+                    "Refrescos": "Erfrischungsgetränke",
+                    "Cervezas": "Biere",
+                    "Cafés": "Kaffee",
+                    "Vinos": "Weine",
+                    "Cavas": "Schaumweine",
+                    "Cócteles": "Cocktails",
+                    "Cócteles sin alcohol": "Alkoholfreie Cocktails",
+                    "Premium": "Premium",
+
+                    // Footer
+                    "Todos los derechos reservados.": "Alle Rechte vorbehalten.",
+                    "Diseño innovador por": "Innovatives Design von"
+                }
+            };
+
+            // Función para cambiar idioma
+            function changeLanguage(lang) {
+                // Guardar preferencia
+                localStorage.setItem('preferredLanguage', lang);
+
+                // Actualizar parámetro en URL sin recargar
+                const url = new URL(window.location.href);
+                url.searchParams.set('lang', lang);
+                window.history.pushState({}, '', url);
+
+                // Aplicar traducciones
+                translatePage(lang);
+            }
+
+            // Función principal de traducción
+            function translatePage(lang) {
+                // Traducir elementos con data-translate
+                document.querySelectorAll('[data-translate]').forEach(element => {
+                    const key = element.getAttribute('data-translate');
+                    if (translations[lang] && translations[lang][key]) {
+                        element.textContent = translations[lang][key];
+                    }
+                });
+
+                // Traducir textos especiales (como descripciones)
+                document.querySelectorAll('.item-description, .item-name, .section-title span').forEach(element => {
+                    const text = element.textContent.trim();
+                    if (translations[lang] && translations[lang][text]) {
+                        element.textContent = translations[lang][text];
+                    }
+                });
+            }
+
+            // Al cargar la página
+            document.addEventListener('DOMContentLoaded', () => {
+                // Obtener idioma de URL o localStorage
+                const urlParams = new URLSearchParams(window.location.search);
+                const lang = urlParams.get('lang') || localStorage.getItem('preferredLanguage') || 'es';
+
+                // Aplicar idioma
+                translatePage(lang);
             });
         </script>
 </body>
